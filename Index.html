@@ -2,59 +2,100 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portaforlio</title>
-    <link rel="stylesheet" href="./styles/css/header.css">
-    <link rel="stylesheet" href="./styles/css/normalize/normalize.css">
-    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portaforlio</title>
+  <link href="https://file.myfontastic.com/6UWbvKjJdpVbg2niSvcHuf/icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Knewave&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/css/normalize/normalize.css">
+  <link rel="stylesheet" href="./styles/css/header.css">
 </head>
 
 <body>
-    <header class="main-header">
+  <header class="main-header">
 
 
-        <div class="main-header-logo">
-            <div class="logo perfil"></div>
+    <div class="header-contenedor">
+
+      <div class="header-contenedor-logo">
+        <div class="logoFis perfil"></div>
+      </div>
+
+      <div class="header-contenedor-titulo">
+        <h1 class="header-titulo">
+          <a class="header-titulo-h1" href="#">Smiti Developer</a>
+        </h1>
+      </div>
+
+      <div class="header-contenedor-perfil">
+        <div class="perfil--foto">
+          <div class="foto perfil"></div>
         </div>
-        <div class="main-header-presentacion">
 
-            <h2 class="titulo">
+        <div class="perfil--redesSociales">
+          <span class="icon-whatsapp icono"></span>
+          <span class="icon-gmail icono"></span>
+          <span class="icon-facebook icono"></span>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <nav class="main-navbar">
+    <div class="navbar-contenedor">
+      <ul class="navbar-contenedor-menu">
+        <li class="menu--items activate"><a class="link" href="#">Proyectos</a></li>
+        <li class="menu--items activate"><a class="link" href="#">Habilidades</a></li>
+        <li class="menu--items activate"><a class="link" href="#">Formación</a></li>
+        <li class="menu--items activate"><a class="link" href="#">Contacto</a></li>
+        <li class="menu--items activate"><a class="link" href="#">Experiencia</a></li>
+      </ul>
+    </div>
+  </nav>
+  <section class="main-banner">
+    <div class="banner-contenedor-paradax">
+      <div class="descripcion-paradax">
+       <div>
+        <h2 class="descripcion-paradax-h2">Front-end <br> is my pasion</h2>
+       </div>
+        <p class="descripcion-paradax-parrafo">
+          Busco trabajar con una visión de </br>superación 
+          en la vida y ser feliz con lo que me gusta hacer
+        </p> 
+        <div class="descripcion-paradax-accion">
+          <a class="link1 boton" href="#">Ver Proyectos</a>
+          <a class="link2 boton" href="#">Contácteme</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <div class="main-header-presentacion">
+
+            <p class="titulo">
                 <span class="typed"></span>
-            </h2>
+            </p>
 
 
-            <div id="escribir" class="titulo">
-                <p class="parrafo">Haga realidad su proyecto con</br> <i class="escritura">Las técnologias actuales</i></p>
-                <p class="parrafo">Haga realidad su proyecto con</br> <i class="escritura">Diseños personalizados</i></p>
-                <p class="parrafo">Haga realidad su proyecto con</br> <i class="escritura">Web responsivo</i></p>
-                <p class="parrafo">Haga realidad su proyecto con</br> <i class="escritura">Manejo de versiones</i></p>
-                <p class="parrafo">Haga realidad su proyecto con</br> <i class="escritura">Buen manejo de base de Datos</i></p>
+            <div id="escribir" >
+                <p class="parrafo">Haga realidad su proyecto con</br> <span class="escritura">Las técnologias actuales</span></p>
+                <p class="parrafo">Haga realidad su proyecto con</br> <span class="escritura">Diseños personalizados</span></p>
+                <p class="parrafo">Haga realidad su proyecto con</br> <span class="escritura">Web responsivo</span></p>
+                <p class="parrafo">Haga realidad su proyecto con</br> <span class="escritura">Manejo de versiones</span></p>
+                <p class="parrafo">Haga realidad su proyecto con</br> <span class="escritura">Buen manejo de base de Datos</span></p>
             </div>
 
-        </div>
-
-
-        <div class="main-header-perfil">
-            <div class="perfil--foto">
-                <div class="foto perfil"></div>
-            </div>
-
-            <div class="perfil--redesSociales">
-                <span class="icon-facebook icono">Facebook</span>
-                <span class="icon-whatsapp icono">Whatsapp</span>
-                <span class="icon-correo icono">Correo</span>
-            </div>
-        </div>
-
-    </header>
+        </div> -->
 
 
 
 
 
-    <script src="./app/library/type.js"></script>
-    <script src="./app/app.js"></script>
+
+
+  <script src="./app/library/type.js"></script>
+  <script src="./app/app.js"></script>
 </body>
 
 </html>
