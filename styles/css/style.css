@@ -1,0 +1,265 @@
+.main-header {
+  background-image: linear-gradient(to bottom, #0080ff, black);
+  box-shadow: 5px 5px 8px black;
+  width: 100%;
+}
+.main-header .perfil {
+  width: 130px;
+  height: 130px;
+  border-radius: 5%;
+  box-shadow: 0px 3px 4px white;
+  z-index: 20;
+}
+.main-header .header-contenedor {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  padding-top: 18px;
+}
+.main-header .header-contenedor-logo .logoFis {
+  background: url(../../images/fis.png) no-repeat center;
+  background-size: cover;
+  border: solid 2px black;
+}
+.main-header .header-contenedor-titulo {
+  display: flex;
+  align-items: center;
+}
+.main-header .header-contenedor-titulo .header-titulo {
+  margin: 0;
+  font-weight: normal;
+  margin-top: -15px;
+}
+.main-header .header-contenedor-titulo .header-titulo-h1 {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 55px;
+  font-family: "Knewave", cursive;
+  text-shadow: 5px 5px 5px black;
+  transition: all 1s;
+}
+.main-header .header-contenedor-titulo .header-titulo-h1:hover {
+  transform: scale(1.1);
+  font-style: normal;
+}
+.main-header .header-contenedor-perfil {
+  display: flex;
+}
+.main-header .header-contenedor-perfil .perfil--foto .foto {
+  background: url(../../images/foto.jpg) no-repeat center;
+  background-size: cover;
+  border: solid 2px black;
+}
+.main-header .header-contenedor-perfil .perfil--redesSociales {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.main-header .header-contenedor-perfil .perfil--redesSociales .icono {
+  margin-left: 20px;
+  color: white;
+  font-size: 25px;
+  line-height: 30px;
+  width: 30px;
+  height: 30px;
+}
+.main-header .header-contenedor-perfil .perfil--redesSociales .icono:hover {
+  cursor: pointer;
+  transform: translateY(-3px) scale(1.3);
+  transition: all 0.6s;
+}
+.main-header .header-contenedor-perfil .perfil--redesSociales .icon-facebook:hover {
+  color: #2f71ff;
+}
+.main-header .header-contenedor-perfil .perfil--redesSociales .icon-whatsapp:hover {
+  color: #00bb2d;
+}
+.main-header .header-contenedor-perfil .perfil--redesSociales .icon-gmail:hover {
+  color: #db4a39;
+}
+
+.main-navbar .navbar-contenedor {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+.main-navbar .navbar-contenedor-menu {
+  margin-top: -13px;
+  padding: 0;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+.main-navbar .navbar-contenedor-menu .menu--items {
+  list-style: none;
+}
+.main-navbar .navbar-contenedor-menu .menu--items .link {
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  padding: 16px 34px;
+}
+.main-navbar .navbar-contenedor-menu .menu--items .link:hover {
+  background-image: linear-gradient(#0080ff, black);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  box-shadow: 0 4px 5px black;
+}
+
+.main-banner .banner-contenedor-paradax {
+  width: 100%;
+  height: 600px;
+  background: url(../../images/paradax.jpg) no-repeat 90% 65%;
+  background-attachment: fixed;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.main-banner .banner-contenedor-paradax .descripcion-paradax {
+  z-index: 10;
+  height: 260px;
+  margin-left: 18%;
+}
+.main-banner .banner-contenedor-paradax .descripcion-paradax-h2 .titulo {
+  font-weight: normal;
+  margin: 0;
+  color: #0080ff;
+  font-size: 50px;
+  font-family: "Knewave", cursive;
+  text-shadow: 6px 6px 3px black;
+}
+.main-banner .banner-contenedor-paradax .descripcion-paradax-h2 .titulo .interes {
+  font-size: 50px;
+  color: #00ff80;
+  text-shadow: 6px 6px 3px black;
+}
+.main-banner .banner-contenedor-paradax .descripcion-paradax-parrafo {
+  margin: 25px 0;
+  color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  font-size: 19px;
+  text-shadow: 5px 4px 4px white;
+}
+.main-banner .banner-contenedor-paradax .descripcion-paradax-accion {
+  margin-top: 35px;
+}
+.main-banner .banner-contenedor-paradax .descripcion-paradax-accion .boton {
+  text-decoration: none;
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin: 0 5px;
+  font-weight: bold;
+  box-shadow: 5px 5px 10px black;
+  font-weight: bold;
+}
+.main-banner .banner-contenedor-paradax .descripcion-paradax-accion .link1 {
+  box-sizing: border-box;
+  background-color: white;
+  color: #0080ff;
+  transition: all 1s;
+  border: solid 3px white;
+}
+.main-banner .banner-contenedor-paradax .descripcion-paradax-accion .link1:hover {
+  color: black;
+  border: solid 3px black;
+}
+.main-banner .banner-contenedor-paradax .descripcion-paradax-accion .link2 {
+  background-color: #0080ff;
+  color: white;
+  transition: all 1s;
+  border: solid 3px #0080ff;
+}
+.main-banner .banner-contenedor-paradax .descripcion-paradax-accion .link2:hover {
+  background-color: black;
+  border: solid 3px black;
+}
+.main-banner .banner-contenedor-paradax::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 600px;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(0, 128, 255, 0.3));
+  z-index: 5;
+}
+
+.main-cards .cards-container-tec-basicas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-cards .cards-container-tec-basicas .content-subtitulo {
+  border: solid 2px red;
+  width: 100%;
+}
+.main-cards .cards-container-tec-basicas .subtitulo-general {
+  border: solid 2px black;
+}
+.main-cards .cards-container-tec-basicas .cards-cont {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+.main-cards .cards-container-tec-basicas .cards-cont .card-cont {
+  margin: 20px;
+  perspective: 1000px;
+  perspective-origin: left center;
+  border-radius: 10px;
+}
+.main-cards .cards-container-tec-basicas .cards-cont .card-cont:hover .--card {
+  transform: rotateY(180deg);
+}
+.main-cards .cards-container-tec-basicas .cards-cont .--card {
+  width: 280px;
+  height: 330px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 2s;
+}
+.main-cards .cards-container-tec-basicas .cards-cont .--card .--card-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px black;
+}
+.main-cards .cards-container-tec-basicas .cards-cont .--card .--card-cara {
+  position: absolute;
+}
+.main-cards .cards-container-tec-basicas .cards-cont .--card .--card-back {
+  color: black;
+  transform: rotateY(180deg);
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.main-cards .cards-container-tec-basicas .cards-cont .--card .card-back-html {
+  background-color: #e76735;
+}
+.main-cards .cards-container-tec-basicas .cards-cont .--card .card-back-css {
+  background-color: #7de5ff;
+}
+.main-cards .cards-container-tec-basicas .cards-cont .--card .card-back-js {
+  background-color: #f6ff79;
+}
+.main-cards .cards-container-tec-basicas .cards-cont .--card .card-back-php {
+  background-color: #5f72df;
+}
+.main-cards .cards-container-tec-basicas .cards-cont .card-html-img {
+  background-color: #e94200;
+}
+.main-cards .cards-container-tec-basicas .cards-cont .card-css-img {
+  background-color: #00ccff;
+}
+.main-cards .cards-container-tec-basicas .cards-cont .card-js-img {
+  background-color: #eeff00;
+}
+.main-cards .cards-container-tec-basicas .cards-cont .card-php-img {
+  background-color: #2f48d6;
+}
