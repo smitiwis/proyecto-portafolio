@@ -191,11 +191,15 @@
   align-items: center;
 }
 .main-cards .cards-container-tec-basicas .content-subtitulo {
-  border: solid 2px red;
   width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
-.main-cards .cards-container-tec-basicas .subtitulo-general {
-  border: solid 2px black;
+.main-cards .cards-container-tec-basicas .content-subtitulo .subtitulo-general {
+  font-style: normal;
+  font-size: 35px;
+  font-family: "Sansita Swashed", cursive;
+  text-shadow: 2px 3px 9px black;
 }
 .main-cards .cards-container-tec-basicas .cards-cont {
   display: flex;
@@ -211,55 +215,90 @@
 .main-cards .cards-container-tec-basicas .cards-cont .card-cont:hover .--card {
   transform: rotateY(180deg);
 }
-.main-cards .cards-container-tec-basicas .cards-cont .--card {
+.main-cards .cards-container-tec-basicas .cards-cont .card-cont .--card {
   width: 280px;
   height: 330px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   border-radius: 10px;
   position: relative;
   transform-style: preserve-3d;
   transition: all 2s;
 }
-.main-cards .cards-container-tec-basicas .cards-cont .--card .--card-img {
+.main-cards .cards-container-tec-basicas .cards-cont .card-cont .--card .--card-cara {
+  position: relative;
+  position: absolute;
+  border-radius: 10px;
+  width: 280px;
+  height: 330px;
+}
+.main-cards .cards-container-tec-basicas .cards-cont .card-cont .--card .--card-cara .--card-img {
   width: 100%;
   height: 100%;
   border-radius: 10px;
   box-shadow: 0px 10px 10px black;
 }
-.main-cards .cards-container-tec-basicas .cards-cont .--card .--card-cara {
+.main-cards .cards-container-tec-basicas .cards-cont .card-cont .--card .--card-cara .card-parrafo {
   position: absolute;
+  font-size: 25px;
+  font-weight: bold;
+  top: -10px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 3px 3px black;
 }
-.main-cards .cards-container-tec-basicas .cards-cont .--card .--card-back {
+.main-cards .cards-container-tec-basicas .cards-cont .card-cont .--card .--card-back {
   color: black;
   transform: rotateY(180deg);
   width: 100%;
   height: 100%;
   border-radius: 10px;
+  display: flex;
+  align-items: space-around;
+  justify-content: center;
 }
-.main-cards .cards-container-tec-basicas .cards-cont .--card .card-back-html {
+.main-cards .cards-container-tec-basicas .cards-cont .card-cont .--card .--card-back-descripcion-content-img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  padding: 20px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  box-shadow: 0px 0px 10px black;
+}
+.main-cards .cards-container-tec-basicas .cards-cont .card-cont .--card .--card-back-descripcion-content-img .__img {
+  width: 90%;
+  height: 90%;
+}
+.main-cards .cards-container-tec-basicas .cards-cont .card-cont .--card .card-back-html {
   background-color: #e76735;
 }
-.main-cards .cards-container-tec-basicas .cards-cont .--card .card-back-css {
+.main-cards .cards-container-tec-basicas .cards-cont .card-cont .--card .card-back-css {
   background-color: #7de5ff;
 }
-.main-cards .cards-container-tec-basicas .cards-cont .--card .card-back-js {
+.main-cards .cards-container-tec-basicas .cards-cont .card-cont .--card .card-back-js {
   background-color: #f6ff79;
 }
-.main-cards .cards-container-tec-basicas .cards-cont .--card .card-back-php {
+.main-cards .cards-container-tec-basicas .cards-cont .card-cont .--card .card-back-php {
   background-color: #5f72df;
 }
-.main-cards .cards-container-tec-basicas .cards-cont .card-html-img {
+.main-cards .cards-container-tec-basicas .cards-cont .card-cont .card-html-img {
   background-color: #e94200;
 }
-.main-cards .cards-container-tec-basicas .cards-cont .card-css-img {
+.main-cards .cards-container-tec-basicas .cards-cont .card-cont .card-css-img {
   background-color: #00ccff;
 }
-.main-cards .cards-container-tec-basicas .cards-cont .card-js-img {
+.main-cards .cards-container-tec-basicas .cards-cont .card-cont .card-js-img {
   background-color: #eeff00;
 }
-.main-cards .cards-container-tec-basicas .cards-cont .card-php-img {
+.main-cards .cards-container-tec-basicas .cards-cont .card-cont .card-php-img {
   background-color: #2f48d6;
+}
+footer {
+  background: url("../../../images/cieloeterno.gif");
 }
