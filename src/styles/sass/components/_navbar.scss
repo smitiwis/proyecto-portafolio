@@ -1,44 +1,43 @@
 .main-navbar {
-    
-    margin-bottom: 10px;
-    
-    .navbar-contenedor {
-        display: flex;
-        justify-content: center;
-        background-color: black;
+  margin-bottom: 10px;
 
-        &-menu {
-            margin-top: -13px;
-            padding: 0;
-            width: 40%;
-            display: flex;
-            justify-content: center;
+  .navbar-contenedor {
+    display: flex;
+    justify-content: center;
+    background-color: black;
 
-            .menu--items {
-                list-style: none;
-                .menu__active{
-                    background-image: linear-gradient($colorMenu, $black);
-                    border-top-left-radius: 4px;
-                    border-top-right-radius: 4px;
-                    box-shadow: 0 4px 5px black
-                }
+    &-menu {
+      margin-top: -13px;
+      padding: 0;
+      width: 40%;
+      display: flex;
+      justify-content: center;
 
-                .link {
-                    font-weight: bold;
-                    text-decoration: none;
-                    font-size: 18px;
-                    color: white;
-                    padding: 16px 34px;
-
-                }
-
-                .link:hover {
-                    background-image: linear-gradient($colorMenu, $black);
-                    border-top-left-radius: 4px;
-                    border-top-right-radius: 4px;
-                    box-shadow: 0 4px 5px black
-                }
-            }
+      .menu--items {
+        list-style: none;
+        .menu__active {
+          border-top-left-radius: 4px;
+          border-top-right-radius: 4px;
+          box-shadow: 0 4px 5px black;
+          background-image: linear-gradient($colorMenu, $black);
+          border-bottom:solid 2px $colorMenu;
         }
+        
+        .link {
+          font-weight: bold;
+          text-decoration: none;
+          font-size: 18px;
+          color: white;
+          padding: 16px 34px;
+        }
+        
+        .link:hover {
+          background-image: linear-gradient($colorMenu1, $black);
+          border-top-left-radius: 4px;
+          border-top-right-radius: 4px;
+          box-shadow: 0 4px 5px black;
+        }
+      }
     }
+  }
 }
