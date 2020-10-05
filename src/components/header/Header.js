@@ -14,7 +14,7 @@ render(){
 
           <div className="header-contenedor-titulo">
             <h1 className="header-titulo">
-                <img className="App-logo" src={Logo}/>
+                <img className="rotar" src={Logo}/>
                 <span className="header-titulo-h1">
                   Smiti developer
                 </span>

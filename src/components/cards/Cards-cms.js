@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
-
 // IMPORTACION DE IMAGENES
-import html5 from '../../images/html5.png';
-import css3 from '../../images/css3.png';
-import js from '../../images/js.png';
-import php from '../../images/php.png';
+import wordpress from '../../images/wordpress.png';
+import bem from '../../images/bem.png';
+import github from '../../images/github1.png';
 
-class Cards extends Component {
+class CardsCms extends Component {
   render() {
     return (
       <section className="main-cards">
@@ -17,24 +15,24 @@ class Cards extends Component {
             <div className="content-subtitulo">
               <h3 className="subtitulo-general">
                 Dominio de técnologias básicas como:
-              </h3>
+                  </h3>
             </div>
 
             <div className="cards-cont">
 
               <div className="card-cont">
-                <div className="card-html --card">
-                  <div className="--card-cara card-cara-html">
-                    <img className="card-html-img --card-img " src={html5} alt="imagen-html" />
+                <div className="card-wordpress --card">
+                  <div className="--card-cara card-cara-wordpress">
+                    <img className="card-wordpress-img --card-img " src={wordpress} alt="imagen-wordpress" />
                   </div>
                   <div className="--card-back card-back">
                     <div className="--card-back-descripcion">
                       <div className="--card-back-descripcion-content-img">
-                        <img className="__img " src={html5} alt="imagen-html" />
+                        <img className="__img" src={wordpress} alt="imagen-wordpress" />
                         <span className="__sombra"></span>
                       </div>
                       <div className="--card-back-descripcion-titulo">
-                        <h3 className="__titulo">Html:5 Avanzado</h3>
+                        <h3 className="__titulo">wordpress:5 Avanzado</h3>
                         <ul>
                           <li>Hola</li>
                           <li>Hola</li>
@@ -48,18 +46,18 @@ class Cards extends Component {
               </div>
 
               <div className="card-cont">
-                <div className="card-css --card">
-                  <div className="--card-cara card-cara-css">
-                    <img className="card-css-img --card-img " src={css3} alt="imagen-css" />
+                <div className="card-bem --card">
+                  <div className="--card-cara card-cara-bem">
+                    <img className="card-bem-img --card-img " src={bem} alt="imagen-bem" />
                   </div>
                   <div className="--card-back card-back">
                     <div className="--card-back-descripcion">
                       <div className="--card-back-descripcion-content-img">
-                        <img className="__img " src={css3} alt="imagen-css" />
+                        <img className="__img __img--bem" src={bem} alt="imagen-bem" />
                         <span className="__sombra"></span>
                       </div>
                       <div className="--card-back-descripcion-titulo">
-                        <h3 className="__titulo">css:5 Avanzado</h3>
+                        <h3 className="__titulo">bem:5 Avanzado</h3>
                         <ul>
                           <li>Hola</li>
                         </ul>
@@ -71,14 +69,14 @@ class Cards extends Component {
 
 
               <div className="card-cont">
-                <div className="card-js --card">
-                  <div className="--card-cara card-cara-js">
-                    <img className="card-js-img --card-img " src={js} alt="imagen-js" />
+                <div className="card-github --card">
+                  <div className="--card-cara card-cara-github">
+                    <img className="card-github-img --card-img " src={github} alt="imagen-github" />
                   </div>
                   <div className="--card-back card-back">
                     <div className="--card-back-descripcion">
                       <div className="--card-back-descripcion-content-img">
-                        <img className="__img " src={js} alt="imagen-js" />
+                        <img className="__img " src={github} alt="imagen-github" />
                         <span className="__sombra"></span>
                       </div>
                       <div className="--card-back-descripcion-titulo">
@@ -91,35 +89,13 @@ class Cards extends Component {
                   </div>
                 </div>
               </div>
-
-
-              <div className="card-cont">
-                <div className="card-php --card">
-                  <div className="--card-cara card-cara-php">
-                    <img className="card-php-img --card-img " src={php} alt="imagen-php" />
-                  </div>
-                  <div className="--card-back card-back">
-                    <div className="--card-back-descripcion">
-                      <div className="--card-back-descripcion-content-img">
-                        <img className="__img " src={php} alt="imagen-php" />
-                        <span className="__sombra"></span>
-                      </div>
-                      <div className="--card-back-descripcion-titulo">
-                        <h3 className="__titulo">php:5 Avanzado</h3>
-                        <ul>
-                          <li>Hola</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+           
             </div>
           </div>
         </div>
       </section>
-
     )
   }
 }
-export default Cards;
+
+export default CardsCms;
