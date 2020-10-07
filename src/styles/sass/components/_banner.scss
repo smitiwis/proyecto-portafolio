@@ -1,11 +1,11 @@
 .main-banner {
-
-
+    margin: 5px 0 0 0;
+    background-color: white;
 
     .banner-contenedor-paradax {
         width: 100%;
         height: 600px;
-        background: url(../../images/paradax.jpg) no-repeat 90% 65%;
+        background: url(../../images/paradax.jpg) no-repeat center;
         background-attachment: fixed;
         position: relative;
         display: flex;
@@ -17,13 +17,12 @@
             margin-left: 18%;
 
             &-h2 {
-
                 .titulo {
                     font-weight: normal;
                     margin: 0;
                     color: $colorMenu;
                     font-size: 50px;
-                    font-family: 'Knewave', cursive;
+                    font-family: "Knewave", cursive;
                     text-shadow: 6px 6px 3px hsl(0, 0, 0);
 
                     .interes {
@@ -31,7 +30,6 @@
                         font-size: 50px;
                         color: hsl(150, 100, 48);
                         text-shadow: 6px 6px 3px hsl(0, 0, 0);
-
                     }
                 }
             }
@@ -39,7 +37,7 @@
             &-parrafo {
                 margin: 25px 0;
                 color: black;
-                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
                 font-weight: bold;
                 font-size: 19px;
                 text-shadow: 5px 4px 4px hsl(0, 0, 100);
@@ -56,7 +54,7 @@
                     font-weight: bold;
                     box-shadow: 5px 5px 10px black;
                     font-weight: bold;
-                    &:hover{
+                    &:hover {
                         cursor: pointer;
                     }
                 }
@@ -71,7 +69,6 @@
                     &:hover {
                         color: black;
                         border: solid 3px black;
-
                     }
                 }
 
@@ -81,27 +78,26 @@
                     transition: all 1s;
                     border: solid 3px $colorMenu;
 
-
                     &:hover {
                         background-color: black;
                         border: solid 3px black;
-
                     }
-
                 }
             }
         }
     }
 
     .banner-contenedor-paradax::before {
-        content: '';
+        content: "";
         position: absolute;
         width: 100%;
         height: 600px;
-        background-image:
-            linear-gradient(to bottom,
-                hsla(210, 100, 100, 0.3),
-                hsla(210, 100, 50, 0.3));
+        background-image: linear-gradient(to bottom, hsla(210, 100, 100, 0.3), hsla(210, 100, 50, 0.3));
         z-index: 5;
     }
+}
+
+.titulo-h2 {
+    color: white;
+    text-align: center;
 }

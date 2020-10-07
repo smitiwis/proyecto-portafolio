@@ -1,49 +1,15 @@
 import React, { Component } from 'react';
+import Cards from '../cards/Cards';
+import CardsFramework from '../cards/Cards-framework';
+import CardsCms from '../cards/Cards-cms'
 
 class Habilidades extends Component {
-    render(){
-        return(
+    render() {
+        return (
             <div>
-                <h1>Hola soy la pagina de Habilidades</h1>
-                                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-
+                <Cards />
+                <CardsFramework />
+                <CardsCms />
             </div>
         )
     }

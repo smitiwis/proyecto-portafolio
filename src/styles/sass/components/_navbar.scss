@@ -1,5 +1,4 @@
 .main-navbar {
-  margin-bottom: 10px;
 
   .navbar-contenedor {
     display: flex;
@@ -18,7 +17,7 @@
         .menu__active {
           border-top-left-radius: 4px;
           border-top-right-radius: 4px;
-          box-shadow: 0 4px 5px black;
+          box-shadow: 0 3px 5px 2px white;
           background-image: linear-gradient($colorMenu, $black);
           border-bottom:solid 2px $colorMenu;
         }

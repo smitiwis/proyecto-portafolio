@@ -2,8 +2,14 @@
 
 @import './variables/variables';
 
+// generales
 @import './components/header';
+@import './components/footer';
 @import './components/navbar';
+
+// Home
 @import './components/banner';
 @import './components/cards';
-@import './components/footer';
+
+// Formacion académica
+@import './components/formacion/formacion';

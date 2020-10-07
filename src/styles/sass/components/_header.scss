@@ -15,7 +15,9 @@
     transform: rotate(360deg);
   }
 }
-
+body{
+  background: url(../../images/cieloeterno.gif);
+}
 .main-header {
   background-image: linear-gradient(to bottom, $colorMenu, $black);
   box-shadow: 5px 5px 8px hsl(0, 100, 0);
