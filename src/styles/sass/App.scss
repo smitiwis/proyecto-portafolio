@@ -1,6 +1,9 @@
 
-
+// variables
 @import './variables/variables';
+
+// estilos especificos
+@import './components/general/layout';
 
 // generales
 @import './components/header';
@@ -10,6 +13,7 @@
 // Home
 @import './components/banner';
 @import './components/cards';
+@import './components/bienvenido';
 
 // Formacion académica
 @import './components/formacion/formacion';

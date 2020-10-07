@@ -9,9 +9,9 @@ import ceid from '../../images/ceid.jpg';
 class Formacion extends Component {
   render() {
     return (
-      <div className="formacion">
-        <div className="formacion__titulo">
-          <h1 className="formacion__titulo-texto">Formación académica</h1>
+      <div className="formacion margen">
+        <div className="formacion__titulo titulo-cont-h1">
+          <h1 className="formacion__titulo-texto titulo-h1">Formación académica</h1>
         </div>
         <div className="formacion__contenedor-Gen">
 

@@ -1,3 +1,21 @@
+.titulo-cont-h1 {
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: solid 3px #0080ff;
+  margin: 30px 0 20px 0; }
+
+.titulo-h1 {
+  text-align: center;
+  padding: 5px 10px;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  box-shadow: 0px -3px 10px 5px;
+  background: linear-gradient(black, #0080ff);
+  color: white; }
+
+.margen {
+  padding: 20px 10%; }
+
 @media (prefers-reduced-motion: no-preference) {
   .rotar {
     width: 120px;
@@ -90,10 +108,91 @@ body {
   background-image: linear-gradient(to top, #0080ff, black);
   box-shadow: 5px -5px 8px black;
   width: 100%;
+  height: 400px;
+  padding: 20px 0;
   color: white;
-  font-size: 25px;
-  padding: 15px 0px;
-  text-align: center; }
+  border-top: solid 1px white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; }
+
+.footer__content-Gen {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.footer__content-Ind {
+  width: 22%;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 15px 30px; }
+
+.footer__titulo {
+  margin-bottom: 20px; }
+  .footer__titulo-h4 {
+    display: table;
+    font-size: 20px;
+    margin: 0px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px white; }
+
+.footer__parrafo {
+  text-align: justify; }
+
+.footer__body {
+  width: 100%; }
+
+.footer__content-items {
+  padding: 0; }
+
+.footer__item {
+  margin: 10px 0px;
+  list-style: none;
+  display: flex;
+  align-items: center; }
+
+.footer__icon {
+  margin: 0 10px;
+  font-size: 30px; }
+
+.icon-location {
+  color: red; }
+
+.icon-phone {
+  color: #00ff80; }
+
+.icon-gmail {
+  color: #ff3e24; }
+
+.icon-gmail2 {
+  color: #c8ff00; }
+
+.icon-whatsapp {
+  color: #00ff80; }
+
+.icon-apuntar {
+  font-size: 20px;
+  margin: 0 10px;
+  color: #00ff80;
+  background-color: black;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.footer__boton {
+  font-size: 18px;
+  margin: 0 5px;
+  color: yellow;
+  background-color: black;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px; }
 
 .main-navbar .navbar-contenedor {
   display: flex;
@@ -347,124 +446,176 @@ body {
         .main-cards .cards-container-tec-basicas .cards-cont .card-cont .card-github {
           background-color: rgba(124, 47, 37, 0.8); }
 
-.formacion {
-  margin-top: -10px;
-  background-repeat: repeat;
-  padding: 20px 10%;
+.bienvenido__capacidades {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.bienvenido__cont-Ind {
+  background-color: white;
+  position: relative;
+  border-radius: 10px;
+  margin: 15px;
+  padding: 10px 15px;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; }
+  .bienvenido__cont-Ind::after {
+    content: '';
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 81, 255, 0.5);
+    border-radius: 10px;
+    opacity: 0;
+    transform: scale(0.0001);
+    transition: all 0.8s; }
+  .bienvenido__cont-Ind:hover::after {
+    transform: scale(1);
+    opacity: 1;
+    background-color: rgba(0, 174, 255, 0.1); }
+  .bienvenido__cont-Ind:hover .bienvenido__icon {
+    transform: scale(1.2); }
+
+.bienvenido__icon {
+  font-size: 110px;
+  margin: 0;
+  color: #0080ff;
+  transform: scale(1);
+  transition: all .5s; }
+
+.bienvenido__titulo-h2 {
+  border-bottom: solid 3px #0080ff;
+  margin: 0;
+  padding: 0 0 5px 0;
+  color: black; }
+
+.bienvenido__parrafo-desc {
+  text-align: justify;
+  color: black; }
+
+.formacion__titulo {
+  margin: 30px 0 20px 0; }
+
+.formacion__titulo-texto {
+  background: linear-gradient(black, #0080ff);
   color: white; }
-  .formacion .formacion__titulo {
-    border-bottom: solid 3px #0080ff;
+
+.formacion__contenedor-Gen {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
+
+.formacion__contenedor-Ind {
+  position: relative;
+  margin: 25px 20px;
+  width: 365px;
+  height: 365px; }
+
+.formacion__contenedor-body {
+  width: 365px;
+  height: 365px;
+  background: radial-gradient(#0080ff, white, black, #0080ff, black, black);
+  overflow: hidden;
+  position: absolute;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 5px white;
+  padding: 15px 20px; }
+
+.formacion__body-contenido {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.formacion__body-subTitulo {
+  border-bottom: solid 4px #0080ff;
+  display: flex; }
+  .formacion__body-subTitulo-texto {
+    width: 120px;
+    text-align: center;
+    text-shadow: 0px 2px 10px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin: 0;
+    padding: 10px;
+    transform: translateX(0%);
+    background: linear-gradient(black, #0080ff);
+    transition: all 0.7s; }
+
+.formacion__body-descripcion {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  transform: scale(1);
+  transition: all 0.7s; }
+  .formacion__body-descripcion-item {
+    color: black;
+    margin: 5px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px 15px;
     display: flex;
+    align-items: center;
     justify-content: flex-start;
-    margin: 30px 0 20px 0; }
-    .formacion .formacion__titulo-texto {
-      text-align: center;
-      padding: 5px 10px;
-      border-top-right-radius: 8px;
-      border-top-left-radius: 8px;
-      display: table;
-      background: linear-gradient(black, #0080ff);
-      box-shadow: 0px -3px 10px 5px; }
-  .formacion__contenedor-Gen {
+    flex-wrap: wrap; }
+    .formacion__body-descripcion-item .item-titulo {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      margin: 5px; }
+    .formacion__body-descripcion-item .item-desc {
+      margin: 3px;
+      font-size: 15px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; }
+
+.informacion__body-img {
+  background: url(../../images/cieloeterno.gif);
+  box-shadow: 0px 0px 13px 10px white;
+  width: 725px;
+  height: 725px;
+  position: relative;
+  position: absolute;
+  top: 4px;
+  left: -100%;
+  border-radius: 50%;
+  transform: scale(0.001);
+  opacity: 0;
+  transition: all 0.7s; }
+  .informacion__body-img .informacion__front {
+    position: absolute;
+    top: 15%;
+    right: 13%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
     align-items: center; }
-    .formacion__contenedor-Gen .formacion__contenedor-Ind {
-      position: relative;
-      margin: 25px 20px;
-      width: 365px;
-      height: 365px; }
-      .formacion__contenedor-Gen .formacion__contenedor-Ind .formacion__contenedor-body {
-        width: 365px;
-        height: 365px;
-        background: radial-gradient(#0080ff, white, black, #0080ff, black, black);
-        overflow: hidden;
-        position: absolute;
-        border-radius: 10px;
-        box-shadow: 0px 0px 5px 5px white;
-        padding: 15px 20px; }
-        .formacion__contenedor-Gen .formacion__contenedor-Ind .formacion__contenedor-body .formacion__body-contenido {
-          display: flex;
-          flex-direction: column;
-          justify-content: center; }
-          .formacion__contenedor-Gen .formacion__contenedor-Ind .formacion__contenedor-body .formacion__body-contenido .formacion__body-subTitulo {
-            border-bottom: solid 4px #0080ff;
-            display: flex; }
-            .formacion__contenedor-Gen .formacion__contenedor-Ind .formacion__contenedor-body .formacion__body-contenido .formacion__body-subTitulo-texto {
-              width: 120px;
-              text-align: center;
-              text-shadow: 0px 2px 10px black;
-              box-shadow: 0px 0px 10px 5px white;
-              border-top-left-radius: 8px;
-              border-top-right-radius: 8px;
-              margin: 0;
-              padding: 10px;
-              transform: translateX(0%);
-              background: linear-gradient(black, #0080ff);
-              transition: all  .7s; }
-          .formacion__contenedor-Gen .formacion__contenedor-Ind .formacion__contenedor-body .formacion__body-contenido .formacion__body-descripcion {
-            margin-top: 20px;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            transform: scale(1);
-            transition: all .7s; }
-            .formacion__contenedor-Gen .formacion__contenedor-Ind .formacion__contenedor-body .formacion__body-contenido .formacion__body-descripcion-item {
-              color: black;
-              margin: 5px;
-              background-color: white;
-              border-radius: 8px;
-              padding: 10px 15px;
-              display: flex;
-              align-items: center;
-              justify-content: flex-start;
-              flex-wrap: wrap; }
-              .formacion__contenedor-Gen .formacion__contenedor-Ind .formacion__contenedor-body .formacion__body-contenido .formacion__body-descripcion-item .item-titulo {
-                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-                margin: 5px; }
-              .formacion__contenedor-Gen .formacion__contenedor-Ind .formacion__contenedor-body .formacion__body-contenido .formacion__body-descripcion-item .item-desc {
-                margin: 3px;
-                font-size: 15px;
-                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; }
-        .formacion__contenedor-Gen .formacion__contenedor-Ind .formacion__contenedor-body .informacion__body-img {
-          background: url(../../images/cieloeterno.gif);
-          box-shadow: 0px 0px 13px 10px white;
-          width: 725px;
-          height: 725px;
-          position: relative;
-          position: absolute;
-          top: 4px;
-          left: -100%;
-          border-radius: 50%;
-          transform: scale(0.001);
-          opacity: 0;
-          transition: all 0.7s; }
-          .formacion__contenedor-Gen .formacion__contenedor-Ind .formacion__contenedor-body .informacion__body-img .informacion__front {
-            position: absolute;
-            top: 15%;
-            right: 13%;
-            display: flex;
-            flex-direction: column;
-            align-items: center; }
-            .formacion__contenedor-Gen .formacion__contenedor-Ind .formacion__contenedor-body .informacion__body-img .informacion__front .informacion__img {
-              border-radius: 10px;
-              width: 190px;
-              z-index: 10; }
-            .formacion__contenedor-Gen .formacion__contenedor-Ind .formacion__contenedor-body .informacion__body-img .informacion__front .informacion__img-sombra {
-              width: 130px;
-              height: 20px;
-              background: radial-gradient(black, #001aff);
-              box-shadow: 0px 3px 10px 10px #001aff;
-              border-radius: 50%;
-              z-index: 0; }
-        .formacion__contenedor-Gen .formacion__contenedor-Ind .formacion__contenedor-body:hover .informacion__body-img {
-          transform: scale(1);
-          opacity: 1; }
-        .formacion__contenedor-Gen .formacion__contenedor-Ind .formacion__contenedor-body:hover .formacion__body-subTitulo-texto {
-          background: url(../../images/cieloeterno.gif);
-          transform: translateX(170%); }
-        .formacion__contenedor-Gen .formacion__contenedor-Ind .formacion__contenedor-body:hover .formacion__body-descripcion {
-          transform: scale(0.01); }
+    .informacion__body-img .informacion__front .informacion__img {
+      border-radius: 10px;
+      width: 190px;
+      z-index: 10; }
+    .informacion__body-img .informacion__front .informacion__img-sombra {
+      width: 130px;
+      height: 20px;
+      background: radial-gradient(black, #001aff);
+      box-shadow: 0px 3px 10px 10px #001aff;
+      border-radius: 50%;
+      z-index: 0; }
+
+.formacion__contenedor-body:hover .informacion__body-img {
+  transform: scale(1);
+  opacity: 1; }
+
+.formacion__contenedor-body:hover .formacion__body-subTitulo-texto {
+  background: url(../../images/cieloeterno.gif);
+  transform: translateX(170%); }
+
+.formacion__contenedor-body:hover .formacion__body-descripcion {
+  transform: scale(0.01); }
 
 /*# sourceMappingURL=App.css.map */

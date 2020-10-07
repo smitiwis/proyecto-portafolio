@@ -1,0 +1,59 @@
+.bienvenido__capacidades {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.bienvenido__cont-Ind {
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    border-radius: 10px;
+    margin: 15px ;
+    padding: 10px 15px;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    &::after{
+        content: '';
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: rgba(0, 81, 255, 0.5);
+        border-radius: 10px;
+        opacity: 0;
+        transform: scale(0.0001);
+        transition: all 0.8s;
+        
+    }
+    &:hover::after{
+        transform: scale(1);
+        opacity: 1;
+        background-color: rgba(0, 174, 255, 0.1);
+    }
+    &:hover .bienvenido__icon{
+        transform: scale(1.2);
+       }
+}
+
+.bienvenido__icon {
+    font-size: 110px;
+    margin: 0;
+    color: $colorMenu;
+    transform: scale(1);
+    transition: all .5s;
+}
+.bienvenido__titulo-h2 {
+    border-bottom: solid 3px $colorMenu;
+    margin: 0;
+    padding: 0 0 5px 0;
+    color: black;
+}
+.bienvenido__parrafo-desc {
+    text-align: justify;
+    color: black;
+}

@@ -2,8 +2,100 @@
     background-image: linear-gradient(to top, $colorMenu, $black);
     box-shadow: 5px -5px 8px hsl(0, 100, 0);
     width: 100%;
+    height: 400px;
+    padding: 20px 0;
     color: white;
-    font-size: 25px;
-    padding: 15px 0px;
-    text-align: center;
+    border-top: solid 1px white;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.footer__content-Gen {
+    // border: solid 2px red;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer__content-Ind {
+    // border: solid 2px lime;
+    width: 22%;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 15px 30px;
+}
+.footer__titulo {
+    margin-bottom: 20px;
+    &-h4 {
+        display: table;
+        font-size: 20px;
+        margin: 0px;
+        padding: 10px 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 5px white;
+    }
+}
+.footer__parrafo {
+    text-align: justify;
+}
+
+.footer__body {
+    // border: solid 2px red;
+    width: 100%;
+}
+.footer__content-items {
+    padding: 0;
+    // background-color: maroon;
+}
+.footer__item {
+    margin: 10px 0px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.footer__icon {
+    margin: 0 10px;
+    font-size: 30px;
+}
+.icon-location{
+    color: red;
+}
+.icon-phone{
+    color: hsl(150, 100, 50);
+}
+.icon-gmail{
+    color: rgb(255, 62, 36);
+}
+.icon-gmail2{
+    color: rgb(200, 255, 0);
+}
+.icon-facebook2{
+   
+}
+.icon-whatsapp{
+    color: hsl(150, 100, 50);
+}
+.icon-apuntar{
+    font-size: 20px;
+    margin: 0 10px;
+    color:hsl(150, 100, 50);
+    background-color: black;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.footer__boton{
+    font-size: 18px;
+    margin: 0 5px;
+    color: hsl(60, 100, 50);
+    background-color: black;
+    padding: 10px 15px;
+    border: none;
+   border-radius: 10px;
 }
