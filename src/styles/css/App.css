@@ -14,7 +14,7 @@
   color: white; }
 
 .margen {
-  padding: 20px 10%; }
+  padding: 0 10%; }
 
 @media (prefers-reduced-motion: no-preference) {
   .rotar {
@@ -85,34 +85,42 @@ body {
       .main-header .header-contenedor-perfil .perfil--redesSociales {
         display: flex;
         flex-direction: column;
-        justify-content: space-around; }
+        justify-content: space-around;
+        margin-left: 10px; }
         .main-header .header-contenedor-perfil .perfil--redesSociales .icono {
-          margin-left: 20px;
-          color: white;
-          font-size: 25px;
-          line-height: 30px;
+          font-size: 20px;
+          margin: 0 10px;
+          color: black;
+          background-color: white;
+          border-radius: 50%;
           width: 30px;
-          height: 30px; }
+          height: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transform: scale(1);
+          transition: all 0.4s; }
         .main-header .header-contenedor-perfil .perfil--redesSociales .icono:hover {
           cursor: pointer;
-          transform: translateY(-3px) scale(1.3);
-          transition: all 0.6s; }
-        .main-header .header-contenedor-perfil .perfil--redesSociales .icon-facebook:hover {
+          transform: scale(1.35); }
+        .main-header .header-contenedor-perfil .perfil--redesSociales .icon-facebook2:hover {
           color: #2f71ff; }
         .main-header .header-contenedor-perfil .perfil--redesSociales .icon-whatsapp:hover {
           color: #00bb2d; }
-        .main-header .header-contenedor-perfil .perfil--redesSociales .icon-gmail:hover {
+        .main-header .header-contenedor-perfil .perfil--redesSociales .icon-gmail2:hover {
           color: #db4a39; }
 
 .footer {
   background-image: linear-gradient(to top, #0080ff, black);
   box-shadow: 5px -5px 8px black;
   width: 100%;
-  height: 400px;
   padding: 20px 0;
   color: white;
-  border-top: solid 1px white;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; }
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
 .footer__content-Gen {
   width: 100%;
@@ -137,7 +145,7 @@ body {
     margin: 0px;
     padding: 10px 20px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px 5px white; }
+    box-shadow: 0px 3px 10px  white; }
 
 .footer__parrafo {
   text-align: justify; }
@@ -156,7 +164,18 @@ body {
 
 .footer__icon {
   margin: 0 10px;
-  font-size: 30px; }
+  font-size: 30px;
+  display: flex;
+  border-radius: 5px;
+  padding: 1.5px;
+  justify-content: center;
+  background-color: white;
+  align-items: center;
+  transform: scale(1);
+  transition: 0.8s; }
+  .footer__icon:hover {
+    transform: scale(1.3);
+    cursor: pointer; }
 
 .icon-location {
   color: red; }
@@ -165,10 +184,13 @@ body {
   color: #00ff80; }
 
 .icon-gmail {
-  color: #ff3e24; }
+  color: #d0ff00; }
 
 .icon-gmail2 {
-  color: #c8ff00; }
+  color: #ff3e24; }
+
+.icon-facebook2 {
+  color: #3b5998; }
 
 .icon-whatsapp {
   color: #00ff80; }
@@ -183,16 +205,33 @@ body {
   height: 30px;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  transform: translateX(0px);
+  transition: all 0.6s; }
+  .icon-apuntar:hover {
+    transform: translateX(8px);
+    cursor: pointer; }
 
 .footer__boton {
   font-size: 18px;
+  font-weight: bold;
   margin: 0 5px;
-  color: yellow;
-  background-color: black;
+  background-color: white;
+  box-shadow: 0px 3px 10px white;
+  color: black;
   padding: 10px 15px;
   border: none;
-  border-radius: 10px; }
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 1s; }
+  .footer__boton:hover {
+    color: #00ff80;
+    box-shadow: 0px 3px 10px  black;
+    background-color: black; }
+
+.footer__autor-text {
+  font-size: 15px;
+  font-family: 'Times New Roman', Times, serif; }
 
 .main-navbar .navbar-contenedor {
   display: flex;
@@ -446,6 +485,13 @@ body {
         .main-cards .cards-container-tec-basicas .cards-cont .card-cont .card-github {
           background-color: rgba(124, 47, 37, 0.8); }
 
+.bienvenido {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 0; }
+
+.bienvenido__cont-h1 {
+  padding: 5px 20px; }
+
 .bienvenido__capacidades {
   display: flex;
   flex-wrap: wrap;
@@ -462,10 +508,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 5;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; }
+  z-index: 5; }
   .bienvenido__cont-Ind::after {
-    content: '';
+    content: "";
     z-index: 1;
     width: 100%;
     height: 100%;
@@ -480,14 +525,14 @@ body {
     opacity: 1;
     background-color: rgba(0, 174, 255, 0.1); }
   .bienvenido__cont-Ind:hover .bienvenido__icon {
-    transform: scale(1.2); }
+    transform: scale(1.2) translateY(15px); }
 
 .bienvenido__icon {
   font-size: 110px;
   margin: 0;
   color: #0080ff;
   transform: scale(1);
-  transition: all .5s; }
+  transition: all 0.5s; }
 
 .bienvenido__titulo-h2 {
   border-bottom: solid 3px #0080ff;
@@ -498,6 +543,9 @@ body {
 .bienvenido__parrafo-desc {
   text-align: justify;
   color: black; }
+
+.formacion {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; }
 
 .formacion__titulo {
   margin: 30px 0 20px 0; }
@@ -548,7 +596,7 @@ body {
     padding: 10px;
     transform: translateX(0%);
     background: linear-gradient(black, #0080ff);
-    transition: all 0.7s; }
+    transition: all ease-in-out 0.7s; }
 
 .formacion__body-descripcion {
   margin-top: 20px;
@@ -556,7 +604,7 @@ body {
   flex-wrap: wrap;
   align-items: center;
   transform: scale(1);
-  transition: all 0.7s; }
+  transition: all ease-in-out 0.7s; }
   .formacion__body-descripcion-item {
     color: black;
     margin: 5px;
@@ -587,7 +635,7 @@ body {
   border-radius: 50%;
   transform: scale(0.001);
   opacity: 0;
-  transition: all 0.7s; }
+  transition: all ease-in-out 0.7s; }
   .informacion__body-img .informacion__front {
     position: absolute;
     top: 15%;
@@ -617,5 +665,57 @@ body {
 
 .formacion__contenedor-body:hover .formacion__body-descripcion {
   transform: scale(0.01); }
+
+.contacto {
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+
+.contacto__cont {
+  margin: 50px 0;
+  background-color: #0080ff;
+  box-shadow: 0px 0px 15px 10px white;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px; }
+  .contacto__cont-h1 .contacto__h1-texto {
+    color: white; }
+
+.contacto__form {
+  margin: 0 15px; }
+
+.contacto__form-item {
+  margin: 15px 0; }
+
+.contacto__form-data {
+  display: inline-block;
+  margin: 5px 0;
+  text-align: start;
+  width: 40%; }
+
+.contacto__form-input {
+  width: 60%;
+  height: 30px;
+  font-size: 18px;
+  border: 0px;
+  padding: 0px;
+  border-radius: 5px; }
+  .contacto__form-input:focus {
+    border-style: none; }
+
+.contacto__form-textArea {
+  width: 100%; }
+
+.proyectos {
+  margin: 20px;
+  background: url(../../images/construccion.jpg) no-repeat center;
+  width: 100%;
+  height: 50vh; }
+
+.proyectos {
+  margin: 20px;
+  background: url(../../images/construccion.jpg) no-repeat center; }
 
 /*# sourceMappingURL=App.css.map */

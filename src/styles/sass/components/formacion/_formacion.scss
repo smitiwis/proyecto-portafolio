@@ -1,4 +1,7 @@
 
+.formacion{
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
 .formacion__titulo {
   margin: 30px 0 20px 0;
 }
@@ -54,7 +57,7 @@
     padding: 10px;
     transform: translateX(0%);
     background: linear-gradient(black, $colorMenu);
-    transition: all 0.7s;
+    transition: all ease-in-out 0.7s;
   }
 }
 .formacion__body-descripcion {
@@ -63,7 +66,7 @@
   flex-wrap: wrap;
   align-items: center;
   transform: scale(1);
-  transition: all 0.7s;
+  transition: all ease-in-out 0.7s;
   &-item {
     color: black;
     margin: 5px;
@@ -100,7 +103,7 @@
   border-radius: 50%;
   transform: scale(0.001);
   opacity: 0;
-  transition: all 0.7s;
+  transition: all ease-in-out 0.7s;
   .informacion__front {
     position: absolute;
     top: 15%;

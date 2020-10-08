@@ -1,3 +1,13 @@
+.bienvenido {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    margin: 0;
+}
+.bienvenido__cont-h1 {
+    // background-color: $colorMenu ;
+    padding: 5px 20px;
+}
+.bienvenido__titulo-h1 {
+}
 .bienvenido__capacidades {
     display: flex;
     flex-wrap: wrap;
@@ -5,10 +15,10 @@
 }
 
 .bienvenido__cont-Ind {
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     position: relative;
     border-radius: 10px;
-    margin: 15px ;
+    margin: 15px;
     padding: 10px 15px;
     width: 25%;
     display: flex;
@@ -16,9 +26,8 @@
     justify-content: center;
     align-items: center;
     z-index: 5;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    &::after{
-        content: '';
+    &::after {
+        content: "";
         z-index: 1;
         width: 100%;
         height: 100%;
@@ -28,16 +37,15 @@
         opacity: 0;
         transform: scale(0.0001);
         transition: all 0.8s;
-        
     }
-    &:hover::after{
+    &:hover::after {
         transform: scale(1);
         opacity: 1;
         background-color: rgba(0, 174, 255, 0.1);
     }
-    &:hover .bienvenido__icon{
-        transform: scale(1.2);
-       }
+    &:hover .bienvenido__icon {
+        transform: scale(1.2) translateY(15px);
+    }
 }
 
 .bienvenido__icon {
@@ -45,7 +53,7 @@
     margin: 0;
     color: $colorMenu;
     transform: scale(1);
-    transition: all .5s;
+    transition: all 0.5s;
 }
 .bienvenido__titulo-h2 {
     border-bottom: solid 3px $colorMenu;
