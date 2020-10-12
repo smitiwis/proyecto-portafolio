@@ -1,0 +1,33 @@
+@mixin centrarXY-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @mixin centrarXY-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  @mixin centrarX {
+    display: flex;
+    justify-content: center;
+  }
+  @mixin centrarY {
+    display: flex;
+    align-items: center;
+  }
+  @mixin redondear-img ($value){
+    border-radius: $value;
+  }
+  @mixin ancho-largo($ancho, $largo) {
+    width: $ancho;
+    height: $largo;
+  }
+  @mixin cardBack-color($color) {
+    background: $color;
+  }
+  @mixin cardFront-color($colorCard) {
+    background-color: $colorCard;
+    // codigo que se agrega afecta a todos los CARDS
+  }

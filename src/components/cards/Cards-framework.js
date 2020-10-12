@@ -7,37 +7,49 @@ import bootstrap from '../../images/bootstrap.png';
 class CardsFramework extends Component {
   render() {
     return (
-      <section className="main-cards">
+      <section className="cards margen">
+        <div className="cards__cont-Gen">
 
-        <div className="cards-container">
-
-          <div className="cards-container-tec-basicas card-container">
-            <div className="content-subtitulo">
-              <h3 className="subtitulo-general">
-                Dominio de técnologias básicas como:
-                  </h3>
+          <div className="cards__cont-Ind">
+            <div className="cards__titulo-cont titulo-cont-h1">
+              <h3 className="cards__titulo titulo-h1">Manejos de Frameworks</h3>
             </div>
 
-            <div className="cards-cont">
+            <div className="cards__card-cont">
 
-              <div className="card-cont">
-                <div className="card-react --card">
-                  <div className="--card-cara card-cara-react">
-                    <img className="card-react-img --card-img " src={react} alt="imagen-react" />
+              <div className="card__cont-fron-back">
+                <div className="card__cont">
+                  <div className="card__front --card-cara-react">
+                    <div className="card__sombra --sombra-black"></div>
+                    <img className="card__front-img " src={react} alt="imagen-react" />
                   </div>
-                  <div className="--card-back card-back">
-                    <div className="--card-back-descripcion">
-                      <div className="--card-back-descripcion-content-img">
-                        <img className="__img rotar" src={react} alt="imagen-react" />
-                        <span className="__sombra"></span>
+                  <div className="card__back-cont --card-back-react">
+                    <div className="card__back">
+                      <div className="card__img-cont">
+                        <img className="card__img rotar" src={react} alt="imagen-react" />
+                        <span className="card__sombra --sombra-white"></span>
                       </div>
-                      <div className="--card-back-descripcion-titulo">
-                        <h3 className="__titulo">react:5 Avanzado</h3>
-                        <ul>
-                          <li>Hola</li>
-                          <li>Hola</li>
-                          <li>Hola</li>
-                          <li>Hola</li>
+                      <div className="card__body-cont">
+                        <div className="card__body-titulo">
+                          <h3 className="card__titulo-h3">React - Intermedio</h3>
+                        </div>
+                        <ul className="card__body-desc">
+                          <li className="card__desc-list">
+                            <span className="icon-apuntar"></span>
+                            Props, PropTypes, Estados.
+                          </li>
+                          <li className="card__desc-list">
+                            <span className="icon-apuntar"></span>
+                            Sistemas de rutas y formularios.
+                          </li>
+                          <li className="card__desc-list">
+                            <span className="icon-apuntar"></span>
+                            Conectar y consumir API REST.
+                          </li>
+                          <li className="card__desc-list">
+                            <span className="icon-apuntar"></span>
+                            Ciclos de vida de un componente.
+                          </li>
                         </ul>
                       </div>
                     </div>
@@ -45,21 +57,39 @@ class CardsFramework extends Component {
                 </div>
               </div>
 
-              <div className="card-cont">
-                <div className="card-angular --card">
-                  <div className="--card-cara card-cara-angular">
-                    <img className="card-css-img --card-img " src={angular} alt="imagen-css" />
+              <div className="card__cont-fron-back">
+                <div className="card__cont">
+                  <div className="card__front --card-cara-angular">
+                    <div className="card__sombra --sombra-black"></div>
+                    <img className="card__front-img " src={angular} alt="imagen-angular" />
                   </div>
-                  <div className="--card-back card-back">
-                    <div className="--card-back-descripcion">
-                      <div className="--card-back-descripcion-content-img">
-                        <img className="__img " src={angular} alt="imagen-css" />
-                        <span className="__sombra"></span>
+                  <div className="card__back-cont --card-back-angular">
+                    <div className="card__back">
+                      <div className="card__img-cont">
+                        <img className="card__img" src={angular} alt="imagen-angular" />
+                        <span className="card__sombra --sombra-white"></span>
                       </div>
-                      <div className="--card-back-descripcion-titulo">
-                        <h3 className="__titulo">css:5 Avanzado</h3>
-                        <ul>
-                          <li>Hola</li>
+                      <div className="card__body-cont">
+                        <div className="card__body-titulo">
+                          <h3 className="card__titulo-h3">Angular - Intermedio</h3>
+                        </div>
+                        <ul className="card__body-desc">
+                          <li className="card__desc-list">
+                            <span className="icon-apuntar"></span>
+                            Uso de componentes y su arquitectura.
+                          </li>
+                          <li className="card__desc-list">
+                            <span className="icon-apuntar"></span>
+                            Uso de Directivas.
+                          </li>
+                          <li className="card__desc-list">
+                            <span className="icon-apuntar"></span>
+                            Sistemas de rutas y formularios.
+                          </li>
+                          <li className="card__desc-list">
+                            <span className="icon-apuntar"></span>
+                            Conectar y consumir API REST.
+                          </li>
                         </ul>
                       </div>
                     </div>
@@ -68,32 +98,54 @@ class CardsFramework extends Component {
               </div>
 
 
-              <div className="card-cont">
-                <div className="card-bootstrap --card">
-                  <div className="--card-cara card-cara-bootstrap">
-                    <img className="card-js-img --card-img " src={bootstrap} alt="imagen-js" />
+              <div className="card__cont-fron-back">
+                <div className="card__cont">
+                  <div className="card__front --card-cara-bootstrap">
+                    <div className="card__sombra --sombra-black"></div>
+                    <img className="card__front-img " src={bootstrap} alt="imagen-bootstrap" />
                   </div>
-                  <div className="--card-back card-back">
-                    <div className="--card-back-descripcion">
-                      <div className="--card-back-descripcion-content-img">
-                        <img className="__img " src={bootstrap} alt="imagen-js" />
-                        <span className="__sombra"></span>
+                  <div className="card__back-cont --card-back-bootstrap">
+                    <div className="card__back">
+                      <div className="card__img-cont">
+                        <img className="card__img" src={bootstrap} alt="imagen-bootstrap" />
+                        <span className="card__sombra --sombra-white"></span>
                       </div>
-                      <div className="--card-back-descripcion-titulo">
-                        <h3 className="__titulo">js:5 Avanzado</h3>
-                        <ul>
-                          <li>Hola</li>
+                      <div className="card__body-cont">
+                        <div className="card__body-titulo">
+                          <h3 className="card__titulo-h3">Bootstrap - Avanzado</h3>
+                        </div>
+                        <ul className="card__body-desc">
+                          <li className="card__desc-list">
+                            <span className="icon-apuntar"></span>
+                            Manejo de clases de booststrap.
+                          </li>
+                          <li className="card__desc-list">
+                            <span className="icon-apuntar"></span>
+                            Código límpio.
+                          </li>
+                          <li className="card__desc-list">
+                            <span className="icon-apuntar"></span>
+                            Diseños responsivos.
+                          </li>
+                          <li className="card__desc-list">
+                            <span className="icon-apuntar"></span>
+                            Manejo de columnas y filas.
+                          </li>
                         </ul>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-           
+
+
+
             </div>
           </div>
         </div>
       </section>
+
+
     )
   }
 }

@@ -1,38 +1,50 @@
 import React, { Component } from 'react';
 import Logo from '../../images/logo.svg';
+import Navbar from '../navbar/Navbar';
 
 class Header extends Component {
 
-render(){
-    return(
-      <header className="main-header">
+  render() {
+    return (
+      <header className="header">
 
-        <div className="header-contenedor">
-          <div className="header-contenedor-logo">
-            <div className="logoFis perfil"></div>
+        <div className="header__contenedor">
+
+
+          <div className="header__contenedor-logo">
+            <div className="perfil --logoFis"></div>
           </div>
 
-          <div className="header-contenedor-titulo">
-            <h1 className="header-titulo">
-                <img className="rotar" src={Logo} alt="logo"/>
-                <span className="header-titulo-h1">
-                  Smiti developer
+          <div className="header__contenedor-titulo">
+            <h1 className="header__titulo">
+              <img className="rotar" src={Logo} alt="logo" />
+              <span className="header__titulo-h1">
+                Smiti developer
                 </span>
             </h1>
-          </div>
-
-          <div className="header-contenedor-perfil">
-            <div className="perfil--foto">
-              <div className="foto perfil"></div>
+            <div className="navbar__barra">
+              <span className="navbar__icon icon-barra "></span>
             </div>
-
-            <div className="perfil--redesSociales">
-              <span className="icon-whatsapp icono"></span>
-              <span className="icon-gmail icono"></span>
-              <span className="icon-facebook icono"></span>
+            <div className="header__contenedor-navbar">
+              <Navbar />
             </div>
           </div>
+
+          <div className="header__contenedor-perfil">
+            <div className="perfil__foto">
+              <div className="perfil --foto"></div>
+            </div>
+
+            <div className="perfil__redesSociales">
+              <span className="perfil__icono icon-whatsapp"></span>
+              <span className="perfil__icono icon-gmail2"></span>
+              <span className="perfil__icono icon-facebook2"></span>
+            </div>
+          </div>
+
+
         </div>
+
 
       </header>
     )
@@ -40,5 +52,5 @@ render(){
 }
 
 
-export default Header ;
+export default Header;
 

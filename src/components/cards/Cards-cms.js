@@ -7,37 +7,50 @@ import github from '../../images/github1.png';
 class CardsCms extends Component {
   render() {
     return (
-      <section className="main-cards">
+      <section className="cards margen">
+        <div className="cards__cont-Gen">
 
-        <div className="cards-container">
-
-          <div className="cards-container-tec-basicas card-container">
-            <div className="content-subtitulo">
-              <h3 className="subtitulo-general">
-                Dominio de técnologias básicas como:
-                  </h3>
+          <div className="cards__cont-Ind">
+            <div className="cards__titulo-cont titulo-cont-h1">
+              <h3 className="cards__titulo titulo-h1">Control de CMS y metodologías</h3>
             </div>
 
-            <div className="cards-cont">
+            <div className="cards__card-cont">
 
-              <div className="card-cont">
-                <div className="card-wordpress --card">
-                  <div className="--card-cara card-cara-wordpress">
-                    <img className="card-wordpress-img --card-img " src={wordpress} alt="imagen-wordpress" />
+              <div className="card__cont-fron-back">
+                <div className="card__cont">
+                  <div className="card__front --card-cara-wordpress">
+                    <div className="card__sombra --sombra-black"></div>
+                    <img className="card__front-img " src={wordpress} alt="imagen-wordpress" />
                   </div>
-                  <div className="--card-back card-back">
-                    <div className="--card-back-descripcion">
-                      <div className="--card-back-descripcion-content-img">
-                        <img className="__img" src={wordpress} alt="imagen-wordpress" />
-                        <span className="__sombra"></span>
+                  <div className="card__back-cont --card-back-wordpress">
+                    <div className="card__back">
+                      <div className="card__img-cont">
+                        <img className="card__img" src={wordpress} alt="imagen-wordpress" />
+                        <span className="card__sombra --sombra-white"></span>
                       </div>
-                      <div className="--card-back-descripcion-titulo">
-                        <h3 className="__titulo">wordpress:5 Avanzado</h3>
-                        <ul>
-                          <li>Hola</li>
-                          <li>Hola</li>
-                          <li>Hola</li>
-                          <li>Hola</li>
+                      <div className="card__body-cont">
+                        <div className="card__body-titulo">
+                          <h3 className="card__titulo-h3">Wordpress - Avanzado</h3>
+                        </div>
+                        <ul className="card__body-desc">
+                          <li className="card__desc-list">
+                            <span className="icon-apuntar"></span>
+                            Instalación y configuraciones principales.
+                          </li>
+                          <li className="card__desc-list">
+                            <span className="icon-apuntar"></span>
+                            Ínstalacion de pluggins.
+                          </li>
+
+                          <li className="card__desc-list">
+                            <span className="icon-apuntar"></span>
+                            Editar plantillas con código básíco.
+                          </li>
+                          <li className="card__desc-list">
+                            <span className="icon-apuntar"></span>
+                            Creación de plantillas personalizadas, etc.
+                          </li>
                         </ul>
                       </div>
                     </div>
@@ -45,21 +58,31 @@ class CardsCms extends Component {
                 </div>
               </div>
 
-              <div className="card-cont">
-                <div className="card-bem --card">
-                  <div className="--card-cara card-cara-bem">
-                    <img className="card-bem-img --card-img " src={bem} alt="imagen-bem" />
+              <div className="card__cont-fron-back">
+                <div className="card__cont">
+                  <div className="card__front --card-cara-bem">
+                    <div className="card__sombra --sombra-black"></div>
+                    <img className="card__front-img " src={bem} alt="imagen-bem" />
                   </div>
-                  <div className="--card-back card-back">
-                    <div className="--card-back-descripcion">
-                      <div className="--card-back-descripcion-content-img">
-                        <img className="__img __img--bem" src={bem} alt="imagen-bem" />
-                        <span className="__sombra"></span>
+                  <div className="card__back-cont --card-back-bem">
+                    <div className="card__back">
+                      <div className="card__img-cont">
+                        <img className="card__img" src={bem} alt="imagen-bem" />
+                        <span className="card__sombra --sombra-white"></span>
                       </div>
-                      <div className="--card-back-descripcion-titulo">
-                        <h3 className="__titulo">bem:5 Avanzado</h3>
-                        <ul>
-                          <li>Hola</li>
+                      <div className="card__body-cont">
+                        <div className="card__body-titulo">
+                          <h3 className="card__titulo-h3">BEM - Intermedio</h3>
+                        </div>
+                        <ul className="card__body-desc">
+                          <li className="card__desc-list">
+                            <span className="icon-apuntar"></span>
+                            Manejo de clases según el standar "BEM".
+                          </li>
+                          <li className="card__desc-list">
+                            <span className="icon-apuntar"></span>
+                            Bloque-Elemento-Modificador.
+                          </li>
                         </ul>
                       </div>
                     </div>
@@ -68,28 +91,40 @@ class CardsCms extends Component {
               </div>
 
 
-              <div className="card-cont">
-                <div className="card-github --card">
-                  <div className="--card-cara card-cara-github">
-                    <img className="card-github-img --card-img " src={github} alt="imagen-github" />
+              <div className="card__cont-fron-back">
+                <div className="card__cont">
+                  <div className="card__front --card-cara-github">
+                    <div className="card__sombra --sombra-black"></div>
+                    <img className="card__front-img " src={github} alt="imagen-github" />
                   </div>
-                  <div className="--card-back card-back">
-                    <div className="--card-back-descripcion">
-                      <div className="--card-back-descripcion-content-img">
-                        <img className="__img " src={github} alt="imagen-github" />
-                        <span className="__sombra"></span>
+                  <div className="card__back-cont --card-back-github">
+                    <div className="card__back">
+                      <div className="card__img-cont">
+                        <img className="card__img" src={github} alt="imagen-github" />
+                        <span className="card__sombra --sombra-white"></span>
                       </div>
-                      <div className="--card-back-descripcion-titulo">
-                        <h3 className="__titulo">js:5 Avanzado</h3>
-                        <ul>
-                          <li>Hola</li>
+                      <div className="card__body-cont">
+                        <div className="card__body-titulo">
+                          <h3 className="card__titulo-h3">Github - Intermedio</h3>
+                        </div>
+                        <ul className="card__body-desc">
+                          <li className="card__desc-list">
+                            <span className="icon-apuntar"></span>
+                            Manejo de versiones.
+                          </li>
+                          <li className="card__desc-list">
+                            <span className="icon-apuntar"></span>
+                            Trabajo en equipo.
+                          </li>
                         </ul>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-           
+            
+
+
             </div>
           </div>
         </div>

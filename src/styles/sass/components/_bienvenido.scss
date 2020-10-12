@@ -4,11 +4,12 @@
 }
 .bienvenido__cont-h1 {
     // background-color: $colorMenu ;
-    padding: 5px 20px;
+    padding: 0px 5%;
 }
 .bienvenido__titulo-h1 {
 }
 .bienvenido__capacidades {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -18,9 +19,9 @@
     background-color: white;
     position: relative;
     border-radius: 10px;
-    margin: 15px;
+    margin: 0.8%;
     padding: 10px 15px;
-    width: 25%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: center;

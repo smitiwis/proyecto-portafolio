@@ -1,43 +1,47 @@
-.main-navbar {
-
-  .navbar-contenedor {
-    display: flex;
-    justify-content: center;
-    background-color: black;
-
-    &-menu {
-      margin-top: -13px;
-      padding: 0;
-      width: 40%;
-      display: flex;
-      justify-content: center;
-
-      .menu--items {
-        list-style: none;
-        .menu__active {
-          border-top-left-radius: 4px;
-          border-top-right-radius: 4px;
-          box-shadow: 0 3px 5px 2px white;
-          background-image: linear-gradient($colorMenu, $black);
-          border-bottom:solid 2px $colorMenu;
-        }
-        
-        .link {
-          font-weight: bold;
-          text-decoration: none;
-          font-size: 18px;
-          color: white;
-          padding: 16px 34px;
-          cursor: pointer;
-        }
-        
-        .link:hover {
-          background-image: linear-gradient($colorMenu1, $black);
-          border-top-left-radius: 4px;
-          border-top-right-radius: 4px;
-          box-shadow: 0 4px 5px black;
-        }
-      }
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.navbar__contenedor {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar__barra{
+  .navbar__icon{
+    color: white;
+    font-size: 35px;
+  }
+}
+.navbar__contenedor-menu {
+  padding: 0;
+  display: flex;
+  .navbar__items {
+    list-style: none;
+  }
+  .menu__active {
+    
+    border-radius: 5px;
+    box-shadow: 0 3px 5px 2px white;
+    background-image: linear-gradient($colorMenu, $black);
+    border-bottom: solid 3px $colorMenu;
+  }
+  .navbar__link {
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    padding: 15px 20px;
+    margin: 0 1px;
+    cursor: pointer;
+    &:hover {
+      background-image: linear-gradient($colorMenu1, $black);
+      
+      border-radius: 5px;
+      box-shadow: 0 4px 5px black;
     }
+   
   }
 }

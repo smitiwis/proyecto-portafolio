@@ -11,7 +11,6 @@ import Errorpage from './components/pages/Errorpage';
 
 // Componentes estaticos como el header o el footer
 import Header from './components/header/Header';
-import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
 
 class Router extends Component{
@@ -20,7 +19,6 @@ class Router extends Component{
             <BrowserRouter>
             {/* COLOCAR LOS COMPONENTES QUE NO CAMBIAN COMO EL HEADER O FOOTER */}
                 <Header/>
-                <Navbar/>
                 <Switch>
                     <Route  exact path="/" component={Home}/>
                     <Route  exact path="/home" component={Home}/>
