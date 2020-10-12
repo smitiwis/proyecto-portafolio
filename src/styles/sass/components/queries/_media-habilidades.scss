@@ -1,0 +1,51 @@
+// entre 0  y 460
+@media screen and (max-width: 460px) {
+}
+@media screen and (max-width: 700px) {
+     .cards__card-cont{
+        height: auto !important;
+    }
+    .cards__card-cont {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .card__cont-fron-back {
+        width: 70%;
+        height: 350px !important;
+        margin: 25px ;
+    }
+}
+// entre 701 y 849
+@media screen and (min-width: 701px) and (max-width: 849px) {
+    .cards__card-cont{
+        height: 720px !important;
+    }
+    .cards__card-cont {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .card__cont-fron-back {
+        width: 40%;
+        height: 45% !important;
+        margin: 25px 3%;
+    }
+}
+// entre 850 y 1024
+@media screen and (min-width: 850px) and (max-width: 1099px) {
+    .card__cont-fron-back {
+        width: 23% !important;
+        height: 90% !important;
+        margin: 25px 1%;
+    }
+}
+//  mayor a 1025
+@media screen and (min-width: 1100px) {
+    .cards__card-cont {
+        width: 90% !important;
+    }
+    .card__cont-fron-back {
+        width: 20% !important;
+        height: 90% !important;
+        margin: 25px 2%;
+    }
+}

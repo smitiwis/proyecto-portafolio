@@ -78,10 +78,10 @@ class Footer extends Component {
                   <span className="footer__icon icon-phone"></span>+51 987 654 321 / +51 912 345 678
                 </li>
                 <li className="footer__item">
-                  <span className="footer__icon icon-gmail2"></span>asdasdasda@asdas.com
+                  <span className="footer__icon icon-gmail2"></span>xx@asdas.com
                 </li>
                 <li className="footer__item">
-                  <span className="footer__icon icon-gmail"></span>asdasdasda@asdas.com
+                  <span className="footer__icon icon-gmail"></span>xx@asdas.com
                 </li>
               </ul>
             </div>

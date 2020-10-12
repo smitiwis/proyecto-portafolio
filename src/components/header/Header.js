@@ -33,23 +33,6 @@ class Header extends Component {
                 Smiti developer
                 </span>
             </h1>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             <div className="navbar__barra" onClick={barraMenu}>
               <span className="navbar__icon icon-barra "></span>
             </div>
@@ -60,22 +43,8 @@ class Header extends Component {
               <Navbar />
             </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
           </div>
+        
           <div className="header__contenedor-perfil">
             <div className="perfil__foto">
               <div className="perfil --foto"></div>

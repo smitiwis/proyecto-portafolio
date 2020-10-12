@@ -3,13 +3,19 @@
 .cards {
   color: white;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .cards__cont-Gen {
+  width: 95%;
   @include centrarX();
 }
 .cards__cont-Ind {
   @include ancho-largo(100%, auto);
   @include centrarXY-col();
+  // border: solid 2px lime;
+
 }
 .cards__titulo-cont {
   @include ancho-largo(100%, 10%);
@@ -19,29 +25,33 @@
     font-size: 25px;
     color: white;
   }
+
 }
 .cards__card-cont {
   @include centrarXY-row();
-  @include ancho-largo(100%, auto);
+  @include ancho-largo(100%, 360px);
+  // border: solid 2px red;
+
 }
 .card__cont-fron-back {
+  
   // background-color: white;
-  margin: 25px;
+
   perspective: 1000px;
   perspective-origin: left center;
+ 
   @include redondear-img(10px);
-
   &:hover .card__cont {
     transform: rotateY(180deg);
   }
 }
 .card__cont {
-  @include redondear-img(10px);
-  @include ancho-largo(250px, 300px);
+  @include ancho-largo(100%, 100%);
   @include redondear-img(10px);
   position: relative;
   transition: all 1.4s;
   transform-style: preserve-3d;
+
 
   .card__front {
     @include ancho-largo(100%, 100%);
