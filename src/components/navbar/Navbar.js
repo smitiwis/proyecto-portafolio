@@ -3,12 +3,20 @@ import { NavLink } from 'react-router-dom';
 
 class Navbar extends Component {
   render() {
+    let luchito = () => {
+      let menu = document.querySelector('#header__menu-barra');
+      if (menu.classList[1]) {
+        menu.classList.remove('navbar__barra-visible');
+      } else {
+        menu.classList.add("navbar__barra-visible");
+      }
+    }
     return (
       <nav className="navbar">
 
         <div className="navbar__contenedor">
-        
-          <ul className="navbar__contenedor-menu">
+
+          <ul className="navbar__contenedor-menu" onClick={luchito}>
             <li className="navbar__items activate">
               <NavLink activeClassName="menu__active" className="navbar__link" to="/home">Home</NavLink>
             </li>

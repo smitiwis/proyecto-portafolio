@@ -2,9 +2,20 @@ import React, { Component } from 'react';
 import Logo from '../../images/logo.svg';
 import Navbar from '../navbar/Navbar';
 
+
 class Header extends Component {
 
   render() {
+
+    var barraMenu = () => {
+      let menu = document.querySelector('#header__menu-barra');
+      if (menu.classList[1]) {
+        menu.classList.remove('navbar__barra-visible');
+      } else {
+        menu.classList.add("navbar__barra-visible");
+      }
+    }
+
     return (
       <header className="header">
 
@@ -22,14 +33,49 @@ class Header extends Component {
                 Smiti developer
                 </span>
             </h1>
-            <div className="navbar__barra">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div className="navbar__barra" onClick={barraMenu}>
               <span className="navbar__icon icon-barra "></span>
             </div>
-            <div className="header__contenedor-navbar">
+
+            <div
+              className="header__contenedor-navbar"
+              id="header__menu-barra">
               <Navbar />
             </div>
-          </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </div>
           <div className="header__contenedor-perfil">
             <div className="perfil__foto">
               <div className="perfil --foto"></div>
@@ -50,7 +96,6 @@ class Header extends Component {
     )
   }
 }
-
 
 export default Header;
 
