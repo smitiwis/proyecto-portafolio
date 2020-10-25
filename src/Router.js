@@ -20,14 +20,16 @@ class Router extends Component{
             {/* COLOCAR LOS COMPONENTES QUE NO CAMBIAN COMO EL HEADER O FOOTER */}
                 <Header/>
                 <Switch>
-                    <Route  exact path="/" component={Home}/>
-                    <Route  exact path="/home" component={Home}/>
+
+                    <Route  exact path="/home" component={ Home }/>
                     <Route  exact path="/proyectos" component={Proyectos}/>
                     <Route  exact path="/habilidades" component={Habilidades}/>
                     <Route  exact path="/formacion" component={Formacion}/>
                     <Route  exact path="/contacto" component={Contacto}/>
                     <Route  exact path="/experiencia" component={Experiencia}/>
+
                     <Route  component={Errorpage}/>
+                    <Route  path="" component={ Home }/>
                 </Switch>
                 <Footer/>
             </BrowserRouter>

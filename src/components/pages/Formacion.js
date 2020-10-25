@@ -16,7 +16,18 @@ class Formacion extends Component {
         <div className="formacion__contenedor-Gen">
 
           <div className="formacion__contenedor-Ind">
+
+
             <div className="formacion__contenedor-body">
+
+
+              <div className="informacion__body-img">
+                <div className="informacion__front">
+                  <img className="informacion__img" src={faustino} alt="" />
+                  <div className="informacion__img-sombra"></div>
+                </div>
+              </div>
+
               <div className="formacion__body">
                 <div className="formacion__body-contenido">
                   <div className="formacion__body-subTitulo">
@@ -42,16 +53,20 @@ class Formacion extends Component {
                   </div>
                 </div>
               </div>
+
+            </div>
+
+
+          </div>
+
+          <div className="formacion__contenedor-Ind">
+            <div className="formacion__contenedor-body">
               <div className="informacion__body-img">
                 <div className="informacion__front">
-                  <img className="informacion__img" src={faustino} alt="" />
+                  <img className="informacion__img" src={santaIsabel} alt="" />
                   <div className="informacion__img-sombra"></div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div className="formacion__contenedor-Ind">
-            <div className="formacion__contenedor-body">
               <div className="formacion__body">
                 <div className="formacion__body-contenido">
                   <div className="formacion__body-subTitulo">
@@ -77,16 +92,17 @@ class Formacion extends Component {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+
+          <div className="formacion__contenedor-Ind">
+            <div className="formacion__contenedor-body">
               <div className="informacion__body-img">
                 <div className="informacion__front">
-                  <img className="informacion__img" src={santaIsabel} alt="" />
+                  <img className="informacion__img" src={uncp} alt="" />
                   <div className="informacion__img-sombra"></div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div className="formacion__contenedor-Ind">
-            <div className="formacion__contenedor-body">
               <div className="formacion__body">
                 <div className="formacion__body-contenido">
                   <div className="formacion__body-subTitulo">
@@ -112,17 +128,18 @@ class Formacion extends Component {
                   </div>
                 </div>
               </div>
-              <div className="informacion__body-img">
-                <div className="informacion__front">
-                  <img className="informacion__img" src={uncp} alt="" />
-                  <div className="informacion__img-sombra"></div>
-                </div>
-              </div>
+
             </div>
           </div>
 
           <div className="formacion__contenedor-Ind">
             <div className="formacion__contenedor-body">
+              <div className="informacion__body-img">
+                <div className="informacion__front">
+                  <img className="informacion__img" src={tecsup} alt="" />
+                  <div className="informacion__img-sombra"></div>
+                </div>
+              </div>
               <div className="formacion__body">
                 <div className="formacion__body-contenido">
                   <div className="formacion__body-subTitulo">
@@ -148,17 +165,18 @@ class Formacion extends Component {
                   </div>
                 </div>
               </div>
-              <div className="informacion__body-img">
-                <div className="informacion__front">
-                  <img className="informacion__img" src={tecsup} alt="" />
-                  <div className="informacion__img-sombra"></div>
-                </div>
-              </div>
+
             </div>
           </div>
 
           <div className="formacion__contenedor-Ind">
             <div className="formacion__contenedor-body">
+              <div className="informacion__body-img">
+                <div className="informacion__front">
+                  <img className="informacion__img" src={udemy} alt="" />
+                  <div className="informacion__img-sombra"></div>
+                </div>
+              </div>
               <div className="formacion__body">
                 <div className="formacion__body-contenido">
                   <div className="formacion__body-subTitulo">
@@ -185,18 +203,18 @@ class Formacion extends Component {
                   </div>
                 </div>
               </div>
-              <div className="informacion__body-img">
-                <div className="informacion__front">
-                  <img className="informacion__img" src={udemy} alt="" />
-                  <div className="informacion__img-sombra"></div>
-                </div>
-              </div>
+
             </div>
           </div>
-          
 
           <div className="formacion__contenedor-Ind">
             <div className="formacion__contenedor-body">
+              <div className="informacion__body-img">
+                <div className="informacion__front">
+                  <img className="informacion__img" src={ceid} alt="" />
+                  <div className="informacion__img-sombra"></div>
+                </div>
+              </div>
               <div className="formacion__body">
                 <div className="formacion__body-contenido">
                   <div className="formacion__body-subTitulo">
@@ -222,12 +240,7 @@ class Formacion extends Component {
                   </div>
                 </div>
               </div>
-              <div className="informacion__body-img">
-                <div className="informacion__front">
-                  <img className="informacion__img" src={ceid} alt="" />
-                  <div className="informacion__img-sombra"></div>
-                </div>
-              </div>
+
             </div>
           </div>
 
