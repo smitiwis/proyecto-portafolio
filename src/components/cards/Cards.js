@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
 // IMPORTACION DE IMAGENES
-import html5 from '../../images/html5.png';
-import css3 from '../../images/css3.png';
-import js from '../../images/js.png';
-import php from '../../images/php.png';
+import html5  from '../../images/html5.png';
+import css3   from '../../images/css3.png';
+import php    from '../../images/php.png';
+import javascript from '../../images/js.png';
 
 class Cards extends Component {
   render() {
@@ -23,12 +23,12 @@ class Cards extends Component {
                 <div className="card__cont">
                   <div className="card__front --card-cara-html">
                     <div className="card__sombra --sombra-black"></div>
-                    <img className="card__front-img " src={html5} alt="imagen-html" />
+                    <img className="card__front-img " src={html5} alt="imagen-html1" />
                   </div>
                   <div className="card__back-cont --card-back-html">
                     <div className="card__back">
                       <div className="card__img-cont">
-                        <img className="card__img" src={html5} alt="imagen-html" />
+                        <img className="card__img" src={html5} alt="imagen-html2" />
                         <span className="card__sombra --sombra-white"></span>
                       </div>
                       <div className="card__body-cont">
@@ -55,13 +55,13 @@ class Cards extends Component {
               <div className="card__cont-fron-back">
                 <div className="card__cont">
                   <div className="card__front --card-cara-css">
-                    <img className="card__front-img" src={css3} alt="imagen-html" />
+                    <img className="card__front-img" src={css3} alt="imagen-css" />
                     <div className="card__sombra --sombra-black"></div>
                   </div>
                   <div className="card__back-cont --card-back-css">
                     <div className="card__back">
                       <div className="card__img-cont">
-                        <img className="card__img" src={css3} alt="imagen-html" />
+                        <img className="card__img" src={css3} alt="imagen-css2" />
                         <span className="card__sombra --sombra-white"></span>
                       </div>
                       <div className="card__body-cont">
@@ -95,16 +95,17 @@ class Cards extends Component {
 
 
 
+
               <div className="card__cont-fron-back">
                 <div className="card__cont">
                   <div className="card__front --card-cara-js">
-                    <img className="card__front-img" src={js} alt="imagen-html" />
+                    <img className="card__front-img" src={javascript} alt="imagen-js" />
                     <div className="card__sombra --sombra-black"></div>
                   </div>
                   <div className="card__back-cont --card-back-js">
                     <div className="card__back">
                       <div className="card__img-cont">
-                        <img className="card__img" src={js} alt="imagen-html" />
+                        <img className="card__img" src={javascript} alt="imagen-js2" />
                         <span className="card__sombra --sombra-white"></span>
                       </div>
                       <div className="card__body-cont">
@@ -133,17 +134,16 @@ class Cards extends Component {
               </div>
 
 
-
               <div className="card__cont-fron-back">
                 <div className="card__cont">
                   <div className="card__front --card-cara-php">
-                    <img className="card__front-img " src={php} alt="imagen-html" />
+                    <img className="card__front-img " src={php} alt="imagen-php" />
                     <div className="card__sombra --sombra-black"></div>
                   </div>
                   <div className="card__back-cont --card-back-php">
                     <div className="card__back">
                       <div className="card__img-cont">
-                        <img className="card__img" src={php} alt="imagen-html" />
+                        <img className="card__img" src={php} alt="imagen-php2" />
                         <span className="card__sombra --sombra-white"></span>
                       </div>
                       <div className="card__body-cont">
@@ -168,8 +168,7 @@ class Cards extends Component {
                     </div>
                   </div>
                 </div>
-              </div>
-
+              </div> 
 
 
             </div>

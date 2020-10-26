@@ -12,6 +12,7 @@ $anchoCard: 350px;
 $altoCard: 450px;
 
 .proyectos__imagen-cont {
+  // overflow: hidden;
   margin: 15px 1.5%;
   width: $anchoCard;
   height: $altoCard;
@@ -23,6 +24,7 @@ $altoCard: 450px;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  position: relative;
 
   .proyectos__titulo {
     margin-top: 0px;
@@ -67,6 +69,7 @@ $altoCard: 450px;
     transform: scale(1.1);
   }
 }
+
 .proyectos__imagen {
   width: 80%;
   height: 40%;
@@ -74,7 +77,10 @@ $altoCard: 450px;
   box-shadow: 0px 0px 10px 3px rgb(0, 0, 0);
   transform: scale(1);
   transition: all 1s;
+  display: block;
+
 }
+
 
 .proycetos__info-cont {
   width: 78%;

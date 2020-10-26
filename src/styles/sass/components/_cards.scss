@@ -131,10 +131,15 @@
   
 }
 .card__desc-list{
+  
   width: 100%;
   font-size: 14px;
   display: flex;
   align-items: center;
+  .proyectos__link{
+    text-decoration: none;
+    color:white;
+  }
 }
 
 .--card-back-html {

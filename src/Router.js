@@ -27,9 +27,9 @@ class Router extends Component{
                     <Route  exact path="/formacion" component={Formacion}/>
                     <Route  exact path="/contacto" component={Contacto}/>
                     <Route  exact path="/experiencia" component={Experiencia}/>
-
+                    
+                    <Route  path="/" component={ Home }/>
                     <Route  component={Errorpage}/>
-                    <Route  path="" component={ Home }/>
                 </Switch>
                 <Footer/>
             </BrowserRouter>

@@ -5,14 +5,98 @@ import MaquetacionBootstrap from '../../images/maqutacion-bootstrap.png';
 import Maquetacion2 from '../../images/maquetacion2.png';
 import Snake from '../../images/snake.png';
 import Inteligencia from '../../images/inteligencia.png';
+import Colegiohome from '../../images/colegiohome.png';
+import Paises from '../../images/paises.png';
+
 
 class Proyectos extends Component {
+  constructor(props) {
+    super(props);
+    this.mover = this.mover;
+    this.state = {
+      mouseX: 1,
+      mouseY: 1
+    };
+  }
+
+
+
   render() {
+
     return (
       <div className="proyectos">
         <div className="proyectos__contenedor">
 
+
           <div className="proyectos__imagen-cont">
+            <h3 className="proyectos__titulo">Perceptron multicapas I.A</h3>
+            <img className="proyectos__imagen" src={Inteligencia} alt="yankenpo" />
+
+            <div className="proycetos__info-cont">
+              <div className="proyectos__info">
+                <p className="proyectos__descripcion">
+                  Este proyecto trata del entrenamiento de una red neuronal,
+                  donde podemos introducir "n" entradas, "n" salidas y "n" entrenamientos.
+                </p>
+                <a className="proyectos__video" href="https://www.youtube.com/watch?v=s86pfJuVuTk" target="_blank" rel="noopener noreferrer" >
+                  <span className="icon-youtube icono"></span> Mi canal donde explico el código
+                </a>
+                <div className="proyectos__tecnologias">
+                  <h4 className="proyectos__tec-titulo">Tecnologías: </h4>
+                  <p className="proyectos__tec-desc"> Html:5 - Css - JavaScript</p>
+                </div>
+                <a className="proyectos__link" href="https://smitiwis.github.io/IA-en-javaScript/" target="_blank" rel="noopener noreferrer" type="button">
+                  <span className="icon-eye icono"></span> Ver proyecto
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+          <div className="proyectos__imagen-cont">
+            <h3 className="proyectos__titulo">Proyecto Intranet - Home</h3>
+            <img className="proyectos__imagen" src={Colegiohome} alt="new-proyect" />
+
+            <div className="proycetos__info-cont">
+              <div className="proyectos__info">
+                <p className="proyectos__descripcion">
+                  Proyecto en grupo de dos integrantes para una institucion educativa en Junin - huancayo, la
+                  parte front-end fue realizada por mi parte, pero fue suspendida por la llegada del Covid 19.
+                </p>
+                <div className="proyectos__tecnologias">
+                  <h4 className="proyectos__tec-titulo">Tecnologías:</h4>
+                  <p className="proyectos__tec-desc">Angular - Sass - NodeJS</p>
+                </div>
+                <a className="proyectos__link" href="https://github.com/smitiwis/colegio-home" target="_blank" rel="noopener noreferrer" type="button">
+                  <span className="icon-eye icono"></span> Ver proyecto
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+          <div className="proyectos__imagen-cont">
+            <h3 className="proyectos__titulo">Proyecto muestra Paises</h3>
+            <img className="proyectos__imagen" src={Paises} alt="new-pais" />
+
+            <div className="proycetos__info-cont">
+              <div className="proyectos__info">
+                <p className="proyectos__descripcion">
+                  Este proyecto trata de mostrar una lista de paises en forma de tarjetas
+                  en la parte Home del menu.
+                </p>
+                <div className="proyectos__tecnologias">
+                  <h4 className="proyectos__tec-titulo">Tecnologías: </h4>
+                  <p className="proyectos__tec-desc"> Angular - Sass </p>
+                </div>
+                <a className="proyectos__link" href="#" target="_blank" rel="noopener noreferrer" type="button">
+                  <span className="icon-eye icono"></span> Ver proyecto
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="proyectos__imagen-cont" id="proyectos__imagen-cont">
             <h3 className="proyectos__titulo">Proyecto Yan-Ken-Po</h3>
             <img className="proyectos__imagen" src={Yankenpo} alt="yankenpo" />
             <div className="proycetos__info-cont">
@@ -40,7 +124,7 @@ class Proyectos extends Component {
             <div className="proycetos__info-cont">
               <div className="proyectos__info">
                 <p className="proyectos__descripcion">
-                  En este proyecto puedes reproducir los sonidos de un piano 
+                  En este proyecto puedes reproducir los sonidos de un piano
                   Do - Re - Mi - Fa - Sol - La - Si
                 </p>
                 <div className="proyectos__tecnologias">
@@ -58,7 +142,7 @@ class Proyectos extends Component {
           <div className="proyectos__imagen-cont">
             <h3 className="proyectos__titulo">Maquetación con Bootstrap</h3>
             <img className="proyectos__imagen" src={MaquetacionBootstrap} alt="yankenpo" />
-            
+
             <div className="proycetos__info-cont">
               <div className="proyectos__info">
                 <p className="proyectos__descripcion">
@@ -99,7 +183,7 @@ class Proyectos extends Component {
             </div>
           </div>
 
-          
+
           <div className="proyectos__imagen-cont">
             <h3 className="proyectos__titulo">Proyecto Snake</h3>
             <img className="proyectos__imagen" src={Snake} alt="yankenpo" />
@@ -107,7 +191,7 @@ class Proyectos extends Component {
             <div className="proycetos__info-cont">
               <div className="proyectos__info">
                 <p className="proyectos__descripcion">
-                  Este proyecto logre hacerlo y si que me tomo mucho tiempo y lo 
+                  Este proyecto logre hacerlo y si que me tomo mucho tiempo y lo
                   llegue a concluir juntamente con amigos de la universidad.
                   arriba(W) - abajo(S) - derecha(A) - izquierda(D)
                 </p>
@@ -123,77 +207,8 @@ class Proyectos extends Component {
           </div>
 
 
-              
-          <div className="proyectos__imagen-cont">
-            <h3 className="proyectos__titulo">Perceptron multicapas I.A</h3>
-            <img className="proyectos__imagen" src={Inteligencia} alt="yankenpo" />
 
-            <div className="proycetos__info-cont">
-              <div className="proyectos__info">
-                <p className="proyectos__descripcion">
-                  Este proyecto trata del entrenamiento de una red neuronal,
-                  donde podemos introducir "n" entradas, "n" salidas y "n" entrenamientos.
-                </p>
-                <a className="proyectos__video" href="https://www.youtube.com/watch?v=s86pfJuVuTk" target="_blank" rel="noopener noreferrer" >
-                  <span className="icon-youtube icono"></span> Mi canal donde explico el código
-                </a>
-                <div className="proyectos__tecnologias">
-                  <h4 className="proyectos__tec-titulo">Tecnologías: </h4>
-                  <p className="proyectos__tec-desc"> Html:5 - Css - JavaScript</p>
-                </div>
-                <a className="proyectos__link" href="https://smitiwis.github.io/IA-en-javaScript/" target="_blank" rel="noopener noreferrer" type="button">
-                  <span className="icon-eye icono"></span> Ver proyecto
-                </a>
-              </div>
-            </div>
-          </div>
 
-              
-          <div className="proyectos__imagen-cont">
-            <h3 className="proyectos__titulo">Proyecto ---</h3>
-            <img className="proyectos__imagen" src="" alt="new" />
-
-            <div className="proycetos__info-cont">
-              <div className="proyectos__info">
-                <p className="proyectos__descripcion">
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-                </p>
-                <div className="proyectos__tecnologias">
-                  <h4 className="proyectos__tec-titulo">Tecnologías: </h4>
-                  <p className="proyectos__tec-desc"> --- </p>
-                </div>
-                <a className="proyectos__link" href="#" target="_blank" rel="noopener noreferrer" type="button">
-                  <span className="icon-eye icono"></span> Ver proyecto
-                </a>
-              </div>
-            </div>
-          </div>
-
-              
-          <div className="proyectos__imagen-cont">
-            <h3 className="proyectos__titulo">Proyecto ---</h3>
-            <img className="proyectos__imagen" src="" alt="new" />
-
-            <div className="proycetos__info-cont">
-              <div className="proyectos__info">
-                <p className="proyectos__descripcion">
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-                </p>
-                <div className="proyectos__tecnologias">
-                  <h4 className="proyectos__tec-titulo">Tecnologías: </h4>
-                  <p className="proyectos__tec-desc"> --- </p>
-                </div>
-                <a className="proyectos__link" href="#" target="_blank" rel="noopener noreferrer" type="button">
-                  <span className="icon-eye icono"></span> Ver proyecto
-                </a>
-              </div>
-            </div>
-          </div>    
-   
 
         </div>
       </div>

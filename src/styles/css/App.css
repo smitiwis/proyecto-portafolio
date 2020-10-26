@@ -488,6 +488,9 @@ body {
   font-size: 14px;
   display: flex;
   align-items: center; }
+  .card__desc-list .proyectos__link {
+    text-decoration: none;
+    color: white; }
 
 .--card-back-html {
   background: rgba(255, 166, 0, 0.4); }
@@ -803,7 +806,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center; }
+  align-items: center;
+  position: relative; }
   .proyectos__imagen-cont .proyectos__titulo {
     margin-top: 0px;
     font-size: 22px;
@@ -842,7 +846,8 @@ body {
   border-radius: 10px;
   box-shadow: 0px 0px 10px 3px black;
   transform: scale(1);
-  transition: all 1s; }
+  transition: all 1s;
+  display: block; }
 
 .proycetos__info-cont {
   width: 78%; }

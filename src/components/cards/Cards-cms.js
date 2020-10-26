@@ -116,13 +116,19 @@ class CardsCms extends Component {
                             <span className="icon-apuntar"></span>
                             Trabajo en equipo.
                           </li>
+                          <li className="card__desc-list">
+                            <span className="icon-apuntar"></span>
+                            <a className="proyectos__link" href="https://github.com/smitiwis" target="_blank" rel="noopener noreferrer" type="button">
+                              Github-profile
+                            </a>
+                          </li>
                         </ul>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            
+
 
 
             </div>
