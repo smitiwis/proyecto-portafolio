@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import Banner from '../banner/Banner';
-import Bienvenido from '../Bienvenido/Bienvenido';
+import ListaPerfiles from '../Perfil/ListaPerfiles';
 import Habilidades from './Habilidades';
 
 class Home extends Component {
@@ -8,7 +8,7 @@ class Home extends Component {
     return (
       <Fragment>
         <Banner />
-        <Bienvenido/>
+        <ListaPerfiles />
         <Habilidades/>
       </Fragment>
     )
