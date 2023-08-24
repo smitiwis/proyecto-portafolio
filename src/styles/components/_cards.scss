@@ -1,0 +1,205 @@
+@import "./general/mixin";
+
+.cards {
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.cards__cont-Gen {
+  width: 95%;
+  @include centrarX();
+}
+.cards__cont-Ind {
+  @include ancho-largo(100%, auto);
+  @include centrarXY-col();
+  // border: solid 2px lime;
+
+}
+.cards__titulo-cont {
+  @include ancho-largo(100%, 10%);
+  .cards__titulo {
+    margin: 0;
+    font-style: normal;
+    font-size: 25px;
+    color: white;
+  }
+
+}
+.cards__card-cont {
+  @include centrarXY-row();
+  @include ancho-largo(100%, 360px);
+  // border: solid 2px red;
+
+}
+.card__cont-fron-back {
+  
+  // background-color: white;
+
+  perspective: 1000px;
+  perspective-origin: left center;
+ 
+  @include redondear-img(10px);
+  &:hover .card__cont {
+    transform: rotateY(180deg);
+  }
+}
+.card__cont {
+  @include ancho-largo(100%, 100%);
+  @include redondear-img(10px);
+  position: relative;
+  transition: all 1.4s;
+  transform-style: preserve-3d;
+
+
+  .card__front {
+    @include ancho-largo(100%, 100%);
+    @include redondear-img(10px);
+    @include centrarXY-row();
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+  }
+}
+
+.card__front-img {
+  z-index: 5;
+  width: 80%;
+}
+.--sombra-black {
+  @include ancho-largo(175px, 40px);
+  z-index: 1;
+  bottom: 35px;
+  background: radial-gradient(black 15%, #ffffff09 55%);
+  box-shadow: 0px 7px 12px 5px black;
+}
+
+.card__back-cont {
+  box-shadow: 0px 0px 7px 5px white;
+  @include redondear-img(10px);
+  position: absolute;
+  top: 0px;
+  @include ancho-largo(100%, 100%);
+  @include centrarXY-row();
+  transform: rotateY(180deg);
+}
+.card__back {
+  @include ancho-largo(100%, 100%);
+  @include redondear-img(10px);
+  @include centrarXY-col();
+}
+.card__img-cont {
+  @include centrarXY-col();
+  position: relative;
+  margin-top: 25px;
+}
+.card__img {
+  width: 35%;
+  @include redondear-img(15px);
+  z-index: 5;
+}
+.card__sombra {
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  height: 25px;
+}
+
+.--sombra-white {
+  width: 50%;
+  bottom: -17px;
+  z-index: 1;
+  background: radial-gradient(black 5%, white 60%);
+  box-shadow: 1px 5px 10px white;
+}
+.card__body-cont {
+  margin-top: 25px;
+  @include ancho-largo(100%, 100%);
+  padding: 5px 0;
+}
+.card__body-titulo {
+  .card__titulo-h3 {
+    text-align: center;
+    margin: 0;
+  }
+}
+.card__body-desc {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  
+}
+.card__desc-list{
+  
+  width: 100%;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  .proyectos__link{
+    text-decoration: none;
+    color:white;
+  }
+}
+
+.--card-back-html {
+  @include cardBack-color(#ffa60066);
+}
+.--card-back-css {
+  @include cardBack-color(#00eeff66);
+}
+.--card-back-js {
+  @include cardBack-color(#e5ff0066);
+}
+.--card-back-php {
+  @include cardBack-color(#002fff66);
+}
+.--card-back-react {
+  @include cardBack-color(#ffffff66);
+}
+.--card-back-angular {
+  @include cardBack-color(#d61b1b66);
+}
+.--card-back-bootstrap {
+  @include cardBack-color(#9900ff66);
+}
+.--card-back-wordpress {
+  @include cardBack-color(#00a2ff66);
+}
+.--card-back-bem {
+  @include cardBack-color(#0f353166);
+}
+.--card-back-github {
+  @include cardBack-color(#7c2f25cc);
+}
+
+.--card-cara-html {
+  @include cardFront-color(#e94200);
+}
+.--card-cara-css {
+  @include cardFront-color(#00ccff);
+}
+.--card-cara-js {
+  @include cardFront-color(#eeff00);
+}
+.--card-cara-php {
+  @include cardFront-color(#2f48d6);
+}
+.--card-cara-react {
+  @include cardFront-color(#ffffff);
+}
+.--card-cara-angular {
+  @include cardFront-color(#d61b1b);
+}
+.--card-cara-bootstrap {
+  @include cardFront-color(#9023da);
+}
+.--card-cara-wordpress {
+  @include cardFront-color(#00a2ff);
+}
+.--card-cara-bem {
+  @include cardFront-color(#0f3531);
+}
+.--card-cara-github {
+  @include cardFront-color(#c02f1c);
+}

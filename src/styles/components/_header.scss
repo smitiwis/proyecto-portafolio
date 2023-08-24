@@ -1,0 +1,139 @@
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .rotar {
+    width: 120px;
+    animation: rotar-spin infinite 20s linear;
+  }
+}
+
+@keyframes rotar-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  background: url("../../../public/images/cieloeterno.gif");
+}
+
+.header {
+  background-image: linear-gradient(to bottom, $colorMenu, $black);
+  width: 100%;
+  padding: 10px 0;
+}
+.perfil {
+  width: $sizeFhotoWhidth;
+  height: $sizeFhotoHeight;
+  border-radius: 5%;
+  box-shadow: 0px 0px 10px 5px #ffffff;
+  z-index: 20;
+}
+.header__contenedor {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+
+  &-logo {
+    .--logoFis {
+      background: url("../../../public/images/fis.png") no-repeat center;
+      background-size: cover;
+      transition: all 1.3s;
+    }
+    &:hover .--logoFis {
+      border-radius: 50%;
+      box-shadow: 0px 0px 20px 5px #ffff00;
+      transform: rotate(360deg) scale(0.94);
+    }
+  }
+}
+
+.header__contenedor-titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  // border: solid 1px red;
+
+  .header__titulo {
+    padding: 0 0 20px 0;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+
+    &-h1 {
+      display: block;
+      color: white;
+      text-decoration: none;
+      font-size: 55px;
+      font-family: "Knewave", cursive;
+      text-shadow: 5px 5px 8px #000000;
+      transition: all 1s;
+    }
+
+    &-h1:hover {
+      transform: scale(1.1);
+      font-style: normal;
+    }
+  }
+}
+
+.header__contenedor-perfil {
+  display: flex;
+}
+.perfil__foto {
+  .--foto {
+    background: url("../../../public/images/foto3.jpg") no-repeat left;
+    background-size: cover;
+    padding: 20px;
+    transition: all 1.3s;
+  }
+
+  &:hover .--foto {
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px 10px #0055ff;
+    transform: rotate(365deg) scale(1.1);
+  }
+}
+
+.perfil__redesSociales {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 15px;
+
+  .perfil__icono {
+    font-size: 23px;
+    color: #000000;
+    background-color: white;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    // centrear el icono al ccentro de su contenido
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1);
+    transition: all 0.4s;
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.35);
+    }
+  }
+
+  .icon-facebook2:hover {
+    color: #2f71ff;
+  }
+
+  .icon-whatsapp:hover {
+    color: #00bb2d;
+  }
+
+  .icon-gmail2:hover {
+    color: #db4a39;
+  }
+}
