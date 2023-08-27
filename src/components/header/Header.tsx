@@ -12,12 +12,13 @@ const Header = () => {
 
   return (
     <header className="header">
+
       <div className="header__contenedor">
-        <div className="header__contenedor-logo">
-          <div className="perfil --logoFis"></div>
+        <div className="header__logo">
+          <div className="perfil perfil--logoFis"></div>
         </div>
 
-        <div className="header__contenedor-titulo">
+        <div className="header__wrapper-titulo">
           <h1 className="header__titulo">
             <img className="rotar" src="/images/logo.svg" alt="logo" />
             <span className="header__titulo-h1">Smiti developer</span>
@@ -31,9 +32,9 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="header__contenedor-perfil">
-          <div className="perfil__foto">
-            <div className="perfil --foto"></div>
+        <div className="header__perfil">
+          <div className="header__foto">
+            <div className="perfil perfil--foto"></div>
           </div>
 
           <div className="perfil__redesSociales">
@@ -43,6 +44,7 @@ const Header = () => {
           </div>
         </div>
       </div>
+
     </header>
   );
 };

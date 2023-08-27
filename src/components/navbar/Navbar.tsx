@@ -1,4 +1,3 @@
-import { useLocation } from "react-router-dom";
 import { LinkNavBar } from "./LinkNavBar";
 import { ITEMS } from "../../constants";
 
@@ -9,7 +8,7 @@ const Navbar = () => {
       <div className="navbar__contenedor">
         <ul className="navbar__contenedor-menu">
           {ITEMS.map((item) => (
-            <LinkNavBar item={item} />
+            <LinkNavBar key={item.name} item={item} />
           ))}
         </ul>
       </div>
