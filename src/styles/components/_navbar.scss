@@ -1,47 +1,73 @@
 .navbar {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-.navbar__contenedor {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.navbar__barra{
-  .navbar__icon{
-    color: white;
-    font-size: 35px;
+  flex: 1;
+
+  &__items {
+    gap: 0.3rem;
+    margin-top: 0.7rem;
   }
-}
-.navbar__contenedor-menu {
-  padding: 0;
-  display: flex;
-  .navbar__items {
-    list-style: none;
-  }
-  .menu__active {
-    
-    border-radius: 5px;
-    box-shadow: 0 3px 5px 2px white;
-    background-image: linear-gradient($colorMenu, $black);
-    border-bottom: solid 3px $colorMenu;
-  }
-  .navbar__link {
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 18px;
-    color: white;
-    padding: 15px 20px;
-    margin: 0 1px;
-    cursor: pointer;
-    &:hover {
-      background-image: linear-gradient($colorMenu1, $black);
-      
-      border-radius: 5px;
-      box-shadow: 0 4px 5px black;
+
+  &__titulo {
+    display: flex;
+    font-weight: normal;
+    align-items: center;
+    gap: 0.7rem;
+
+    &-text {
+      color: white;
+      text-decoration: none;
+      font-size: 1.6rem;
+      font-family: "Knewave", cursive;
+      text-shadow: 5px 5px 8px #000000;
+      transform: scale(1);
+      transition: all 1s;
+
+      &:hover {
+        transform: scale(1.05);
+        font-style: normal;
+        cursor: default;
+      }
     }
-   
+
+    &-img {
+      height: 35px;
+    }
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+
+    padding: 0.3rem 0.5rem;
+    cursor: pointer;
+    transition: all 0.5s;
+    border-bottom: solid 3px transparent;
+
+    &--active {
+      border-bottom: solid 3px $colorMenu;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &-brand {
+    padding: 0;
+    margin: 0;
+  }
+
+  &-toggler {
+    border: none;
+    padding: 0;
+
+    &-icon {
+      background-image: url("../../../public/images/menu-custom.png");
+    }
+
+    &:focus {
+      box-shadow: none;
+    }
   }
 }

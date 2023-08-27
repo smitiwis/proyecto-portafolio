@@ -13,14 +13,12 @@ export const LinkNavBar: FC<Props> = ({ item }) => {
   const { pathname } = useLocation();
 
   const activeLink = (pathCurrent: string): string => {
-    return pathname.includes(pathCurrent) ? "menu__active" : "";
+    return pathname.includes(pathCurrent) ? "navbar__link--active" : "";
   };
 
   return (
-    <li className="navbar__items activate">
-      <Link className={`navbar__link ${activeLink(path)}`} to={path}>
-        {name}
-      </Link>
-    </li>
+    <Link key={name} className={`navbar__link ${activeLink(path)}`} to={path}>
+      {name}
+    </Link>
   );
 };

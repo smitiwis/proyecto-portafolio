@@ -1,19 +1,35 @@
 import { LinkNavBar } from "./LinkNavBar";
 import { ITEMS } from "../../constants";
 
-const Navbar = () => {
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+
+const NavbarComponent = () => {
+  const { Brand, Toggle, Collapse } = Navbar;
 
   return (
-    <nav className="navbar">
-      <div className="navbar__contenedor">
-        <ul className="navbar__contenedor-menu">
+    <Navbar expand="lg" className="navbar container">
+      <Brand>
+        <h1 className="navbar__titulo">
+          <img
+            className="navbar__titulo-img rotar"
+            src="/images/react.png"
+            alt="logo"
+          />
+          <span className="navbar__titulo-text">Smiti developer</span>
+        </h1>
+      </Brand>
+      <Toggle aria-controls="basic-navbar-nav" />
+      <Collapse id="basic-navbar-nav">
+        <Nav className="navbar__items">
           {ITEMS.map((item) => (
             <LinkNavBar key={item.name} item={item} />
           ))}
-        </ul>
-      </div>
-    </nav>
+        </Nav>
+      </Collapse>
+    </Navbar>
   );
 };
 
-export default Navbar;
+export default NavbarComponent;

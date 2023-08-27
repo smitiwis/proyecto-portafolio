@@ -1,6 +1,5 @@
 @media (prefers-reduced-motion: no-preference) {
   .rotar {
-    width: 120px;
     animation: rotar-spin infinite 20s linear;
   }
 }
@@ -14,53 +13,27 @@
   }
 }
 
-
 .header {
   background-image: linear-gradient(to bottom, $colorMenu, $black);
   width: 100%;
   padding: 10px 0;
+  border-bottom: SOLID 2px #0080ff;
 
-  &__contenedor {
+  &__container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
   }
 
-  &__wrapper-titulo {
+  &__image {
+    display: none;
+    gap: 0.8rem;
+  }
+
+  &__navbar {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-
-    .header__titulo {
-      padding: 0 0 20px 0;
-      font-weight: normal;
-      display: flex;
-      align-items: center;
-
-      &-h1 {
-        display: block;
-        color: white;
-        text-decoration: none;
-        font-size: 55px;
-        font-family: "Knewave", cursive;
-        text-shadow: 5px 5px 8px #000000;
-        transition: all 1s;
-      }
-
-      &-h1:hover {
-        transform: scale(1.1);
-        font-style: normal;
-      }
-    }
-  }
-
-  &__perfil {
-    display: flex;
-  }
-
-  &__foto {
+    flex: 1;
+    justify-content: space-between;
   }
 }
 
@@ -68,16 +41,15 @@
   width: $sizeFhotoWhidth;
   height: $sizeFhotoHeight;
   border-radius: 5%;
-  box-shadow: 0px 0px 10px 5px #ffffff;
+  box-shadow: 0px 0px 7px 2px #ffffff;
   z-index: 20;
 
   &__redesSociales {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-left: 15px;
     transition: all 0.4s;
-  
+
     .perfil__icono {
       font-size: 23px;
       color: #000000;
@@ -89,40 +61,28 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      transform: scale(1);
-      transition: all 0.4s;
-      
+      transition: all 0.3s;
+
       &:hover {
         cursor: pointer;
-        transform: scale(1.1);
       }
     }
-  
+
     .icon-facebook2:hover {
       color: #2f71ff;
     }
-  
+
     .icon-whatsapp:hover {
       color: #00bb2d;
     }
-  
+
     .icon-gmail2:hover {
       color: #db4a39;
     }
   }
-  
 
-  &--logoFis {
-    background: url("../../../public/images/fis.png") no-repeat center;
-    background-size: cover;
-    transition: all 1.3s;
-  }
-
+  &--logoFis,
   &--foto {
-    background: url("../../../public/images/foto3.jpg") no-repeat left;
-    background-size: cover;
-    padding: 20px;
-    transition: all 1.3s;
+    display: none;
   }
 }
-

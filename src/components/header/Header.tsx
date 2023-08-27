@@ -1,4 +1,5 @@
-import Navbar from "../navbar/Navbar";
+import Container from "react-bootstrap/Container";
+import NavbarComponent from "../navbar/Navbar";
 
 const Header = () => {
   var barraMenu = () => {
@@ -12,30 +13,17 @@ const Header = () => {
 
   return (
     <header className="header">
-
-      <div className="header__contenedor">
-        <div className="header__logo">
+      <Container className="header__container">
+        <div className="header__image">
           <div className="perfil perfil--logoFis"></div>
         </div>
 
-        <div className="header__wrapper-titulo">
-          <h1 className="header__titulo">
-            <img className="rotar" src="/images/logo.svg" alt="logo" />
-            <span className="header__titulo-h1">Smiti developer</span>
-          </h1>
-          <div className="navbar__barra" onClick={barraMenu}>
-            <span className="navbar__icon icon-barra "></span>
-          </div>
-
-          <div className="header__contenedor-navbar" id="header__menu-barra">
-            <Navbar />
-          </div>
+        <div className="header__navbar">
+          <NavbarComponent />
         </div>
 
-        <div className="header__perfil">
-          <div className="header__foto">
-            <div className="perfil perfil--foto"></div>
-          </div>
+        <div className="header__image">
+          <div className="perfil perfil--foto"></div>
 
           <div className="perfil__redesSociales">
             <span className="perfil__icono icon-whatsapp"></span>
@@ -43,8 +31,7 @@ const Header = () => {
             <span className="perfil__icono icon-facebook2"></span>
           </div>
         </div>
-      </div>
-
+      </Container>
     </header>
   );
 };
