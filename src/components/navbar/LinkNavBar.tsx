@@ -13,7 +13,8 @@ export const LinkNavBar: FC<Props> = ({ item }) => {
   const { pathname } = useLocation();
 
   const activeLink = (pathCurrent: string): string => {
-    return pathname.includes(pathCurrent) ? "navbar__link--active" : "";
+    const updatePath = pathname === "/" ? "/home" : pathname;
+    return updatePath.includes(pathCurrent) ? "navbar__link--active" : "";
   };
 
   return (

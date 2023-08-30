@@ -6,7 +6,7 @@ import Navbar from "react-bootstrap/Navbar";
 
 const NavbarComponent = () => {
   const { Brand, Toggle, Collapse } = Navbar;
-  console.log("process.env: ", process.env)
+
   return (
     <Navbar expand="lg" className="navbar container">
       <Brand>
