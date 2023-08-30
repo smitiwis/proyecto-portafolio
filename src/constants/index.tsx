@@ -89,6 +89,7 @@ export const EXPERIENCIA_LOBORAL = [
         <div className="d-flex gap-2">
           <img
             height={30}
+            className="mt-1"
             src={`${process.env.PUBLIC_URL}/images/olimpo.png`}
             alt="olimpo"
           />
@@ -117,7 +118,8 @@ export const EXPERIENCIA_LOBORAL = [
                 <li>
                   <b>Popularity Olimpo: </b>
                   <span>
-                    la respuesta más elegida por todos los participantes.
+                    Es un juego virtual para predecir la respuesta más elegida
+                    por todos los participantes.
                   </span>
                 </li>
               </ul>
@@ -194,6 +196,7 @@ export const EXPERIENCIA_LOBORAL = [
         <p>Desarrollador frontend</p>
         <div className="d-flex gap-2">
           <img
+            className="mt-1"
             height={30}
             src={`${process.env.PUBLIC_URL}/images/interbank.png`}
             alt="olimpo"
@@ -251,16 +254,17 @@ export const EXPERIENCIA_LOBORAL = [
   {
     title: "Nov. 2018 - Ene. 2021",
     cardTitle: (
-      <div className="d-flex align-items-center gap-2 mb-2">
+      <div className="d-flex gap-2 mb-2">
         <img
-          height={30}
+          className="mt-1"
+          height={32}
           src={`${process.env.PUBLIC_URL}/images/isgd.png`}
           alt=""
         />
         <span>Ingenieria Social para la Gestión del Desarrollo (ISGD)</span>
       </div>
     ),
-    cardSubtitle: `Desarrollador de Front-end`,
+    cardSubtitle: `Desarrollador Frontend`,
     cardDetailedText: (
       <div>
         <b>Proyecto: Grupo Preventis S.A.C.</b>

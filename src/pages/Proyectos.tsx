@@ -29,7 +29,6 @@ const Proyectos = () => {
               <div className="proyectos__tecnologias">
                 <h4 className="proyectos__tec-titulo">Tecnologías: </h4>
                 <p className="proyectos__tec-desc">
-                  {" "}
                   Html:5 - Css - JavaScript
                 </p>
               </div>
@@ -126,7 +125,6 @@ const Proyectos = () => {
               <div className="proyectos__tecnologias">
                 <h4 className="proyectos__tec-titulo">Tecnologías: </h4>
                 <p className="proyectos__tec-desc">
-                  {" "}
                   Html:5 - Css - JavaScript
                 </p>
               </div>
@@ -160,7 +158,6 @@ const Proyectos = () => {
               <div className="proyectos__tecnologias">
                 <h4 className="proyectos__tec-titulo">Tecnologías: </h4>
                 <p className="proyectos__tec-desc">
-                  {" "}
                   Html:5 - Css - Jquery(JS)
                 </p>
               </div>

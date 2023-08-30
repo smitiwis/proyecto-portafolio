@@ -9,9 +9,9 @@ const Banner = () => (
             <p className="titulo">
               Front-end is <br />
             </p>
-            <p className="titulo">
-              <p>my&nbsp;</p>
-              <p className="titulo--interes">
+            <span className="titulo">
+              <span>my&nbsp;</span>
+              <span className="titulo--interes">
                 <Typical
                   steps={[
                     "",
@@ -26,8 +26,8 @@ const Banner = () => (
                   loop={Infinity}
                   wrapper="p"
                 />
-              </p>
-            </p>
+              </span>
+            </span>
           </div>
 
           <p className="descripcion-paradax-parrafo">
