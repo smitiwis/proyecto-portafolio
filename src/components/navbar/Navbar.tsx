@@ -1,20 +1,19 @@
 import { LinkNavBar } from "./LinkNavBar";
 import { ITEMS } from "../../constants";
 
-import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
 const NavbarComponent = () => {
   const { Brand, Toggle, Collapse } = Navbar;
-
+  console.log("process.env: ", process.env)
   return (
     <Navbar expand="lg" className="navbar container">
       <Brand>
         <h1 className="navbar__titulo">
           <img
             className="navbar__titulo-img rotar"
-            src="/images/react.png"
+            src={`${process.env.PUBLIC_URL}/images/react.png`}
             alt="logo"
           />
           <span className="navbar__titulo-text">Frontend developer</span>

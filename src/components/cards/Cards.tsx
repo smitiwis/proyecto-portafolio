@@ -14,7 +14,7 @@ const Cards = () => {
                   <div className="card__sombra --sombra-black"></div>
                   <img
                     className="card__front-img "
-                    src="/images/html5.png"
+                    src={`${process.env.PUBLIC_URL}/images/html5.png`}
                     alt="imagen-html1"
                   />
                 </div>
@@ -23,7 +23,7 @@ const Cards = () => {
                     <div className="card__img-cont">
                       <img
                         className="card__img"
-                        src="/images/html5.png"
+                        src={`${process.env.PUBLIC_URL}/images/html5.png`}
                         alt="imagen-html2"
                       />
                       <span className="card__sombra --sombra-white"></span>
@@ -53,7 +53,7 @@ const Cards = () => {
                 <div className="card__front --card-cara-css">
                   <img
                     className="card__front-img"
-                    src="/images/css3.png"
+                    src={`${process.env.PUBLIC_URL}/images/css3.png`}
                     alt="imagen-css"
                   />
                   <div className="card__sombra --sombra-black"></div>
@@ -63,7 +63,7 @@ const Cards = () => {
                     <div className="card__img-cont">
                       <img
                         className="card__img"
-                        src="/images/css3.png"
+                        src={`${process.env.PUBLIC_URL}/images/css3.png`}
                         alt="imagen-css2"
                       />
                       <span className="card__sombra --sombra-white"></span>
@@ -102,7 +102,7 @@ const Cards = () => {
                 <div className="card__front --card-cara-js">
                   <img
                     className="card__front-img"
-                    src="/images/js.png"
+                    src={`${process.env.PUBLIC_URL}/images/js.png`}
                     alt="imagen-js"
                   />
                   <div className="card__sombra --sombra-black"></div>
@@ -112,7 +112,7 @@ const Cards = () => {
                     <div className="card__img-cont">
                       <img
                         className="card__img"
-                        src="/images/js.png"
+                        src={`${process.env.PUBLIC_URL}/images/js.png`}
                         alt="imagen-js2"
                       />
                       <span className="card__sombra --sombra-white"></span>
@@ -148,7 +148,7 @@ const Cards = () => {
                 <div className="card__front --card-cara-php">
                   <img
                     className="card__front-img "
-                    src="/images/php.png"
+                    src={`${process.env.PUBLIC_URL}/images/php.png`}
                     alt="imagen-php"
                   />
                   <div className="card__sombra --sombra-black"></div>
@@ -156,7 +156,11 @@ const Cards = () => {
                 <div className="card__back-cont --card-back-php">
                   <div className="card__back">
                     <div className="card__img-cont">
-                      <img className="card__img" src="/images/php.png" alt="imagen-php2" />
+                      <img
+                        className="card__img"
+                        src={`${process.env.PUBLIC_URL}/images/php.png`}
+                        alt="imagen-php2"
+                      />
                       <span className="card__sombra --sombra-white"></span>
                     </div>
                     <div className="card__body-cont">

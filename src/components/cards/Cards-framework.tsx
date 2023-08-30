@@ -17,7 +17,7 @@ const CardsFramework = () => {
                   <div className="card__sombra --sombra-black"></div>
                   <img
                     className="card__front-img "
-                    src="/images/react1.png"
+                    src={`${process.env.PUBLIC_URL}/images/react1.png`}
                     alt="imagen-react"
                   />
                 </div>
@@ -26,7 +26,7 @@ const CardsFramework = () => {
                     <div className="card__img-cont">
                       <img
                         className="card__img rotar"
-                        src="/images/react1.png"
+                        src={`${process.env.PUBLIC_URL}/images/react1.png`}
                         alt="imagen-react"
                       />
                       <span className="card__sombra --sombra-white"></span>
@@ -65,7 +65,7 @@ const CardsFramework = () => {
                   <div className="card__sombra --sombra-black"></div>
                   <img
                     className="card__front-img "
-                    src="/images/angular.png"
+                    src={`${process.env.PUBLIC_URL}/images/angular.png`}
                     alt="imagen-angular"
                   />
                 </div>
@@ -74,7 +74,7 @@ const CardsFramework = () => {
                     <div className="card__img-cont">
                       <img
                         className="card__img"
-                        src="/images/angular.png"
+                        src={`${process.env.PUBLIC_URL}/images/angular.png`}
                         alt="imagen-angular"
                       />
                       <span className="card__sombra --sombra-white"></span>
@@ -115,7 +115,7 @@ const CardsFramework = () => {
                   <div className="card__sombra --sombra-black"></div>
                   <img
                     className="card__front-img "
-                    src="/images/bootstrap.png"
+                    src={`${process.env.PUBLIC_URL}/images/bootstrap.png`}
                     alt="imagen-bootstrap"
                   />
                 </div>
@@ -124,7 +124,7 @@ const CardsFramework = () => {
                     <div className="card__img-cont">
                       <img
                         className="card__img"
-                        src="/images/bootstrap.png"
+                        src={`${process.env.PUBLIC_URL}/images/bootstrap.png`}
                         alt="imagen-bootstrap"
                       />
                       <span className="card__sombra --sombra-white"></span>

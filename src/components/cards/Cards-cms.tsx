@@ -16,7 +16,7 @@ export const CardsCms = () => {
                   <div className="card__sombra --sombra-black"></div>
                   <img
                     className="card__front-img "
-                    src="/images/wordpress.png"
+                    src={`${process.env.PUBLIC_URL}/images/wordpress.png`}
                     alt="imagen-wordpress"
                   />
                 </div>
@@ -25,7 +25,7 @@ export const CardsCms = () => {
                     <div className="card__img-cont">
                       <img
                         className="card__img"
-                        src="/images/wordpress.png"
+                        src={`${process.env.PUBLIC_URL}/images/wordpress.png`}
                         alt="imagen-wordpress"
                       />
                       <span className="card__sombra --sombra-white"></span>
@@ -67,7 +67,7 @@ export const CardsCms = () => {
                   <div className="card__sombra --sombra-black"></div>
                   <img
                     className="card__front-img "
-                    src="/images/bem.png"
+                    src={`${process.env.PUBLIC_URL}/images/bem.png`}
                     alt="imagen-bem"
                   />
                 </div>
@@ -76,7 +76,7 @@ export const CardsCms = () => {
                     <div className="card__img-cont">
                       <img
                         className="card__img"
-                        src="/images/bem.png"
+                        src={`${process.env.PUBLIC_URL}/images/bem.png`}
                         alt="imagen-bem"
                       />
                       <span className="card__sombra --sombra-white"></span>
@@ -107,7 +107,7 @@ export const CardsCms = () => {
                   <div className="card__sombra --sombra-black"></div>
                   <img
                     className="card__front-img "
-                    src="/images/github1.png"
+                    src={`${process.env.PUBLIC_URL}/images/github1.png`}
                     alt="imagen-github"
                   />
                 </div>
@@ -116,7 +116,7 @@ export const CardsCms = () => {
                     <div className="card__img-cont">
                       <img
                         className="card__img"
-                        src="/images/github1.png"
+                        src={`${process.env.PUBLIC_URL}/images/github1.png`}
                         alt="imagen-github"
                       />
                       <span className="card__sombra --sombra-white"></span>

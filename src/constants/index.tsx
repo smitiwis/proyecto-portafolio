@@ -75,7 +75,7 @@ export const EXPERIENCIA_LOBORAL = [
     title: "May. 2022 - Jul. 2023",
     cardTitle: (
       <div className="d-flex align-items-center gap-2 mb-2">
-        <img height={30} src="/images/betsofice.png" alt="" />
+        <img height={30}  src={`${process.env.PUBLIC_URL}/images/betsofice.png`} alt="" />
         <span>Betsoffice SAC</span>
       </div>
     ),
@@ -147,7 +147,7 @@ export const EXPERIENCIA_LOBORAL = [
     title: "Abr. 2021 - May. 2022",
     cardTitle: (
       <div className="d-flex align-items-center gap-2 mb-2">
-        <img height={30} src="/images/tata.png" alt="" />
+        <img height={30} src={`${process.env.PUBLIC_URL}/images/tata.png`} alt="" />
         <span>Tata Consultancy Services (TATA)</span>
       </div>
     ),
@@ -203,7 +203,7 @@ export const EXPERIENCIA_LOBORAL = [
     title: "Nov. 2018 - Ene. 2021",
     cardTitle: (
       <div className="d-flex align-items-center gap-2 mb-2">
-        <img height={30} src="/images/isgd.png" alt="" />
+        <img height={30} src={`${process.env.PUBLIC_URL}/images/isgd.png`} alt="" />
         <span>Ingenieria Social para la Gestión del Desarrollo (ISGD)</span>
       </div>
     ),
@@ -268,7 +268,7 @@ export const EXPERIENCIA_LOBORAL = [
     title: <div>Ago. 2017 - Ago. 2018</div>,
     cardTitle: (
       <div className="d-flex align-items-center gap-2 mb-2">
-        <img height={30} src="/images/xurface.png" alt="" />
+        <img height={30} src={`${process.env.PUBLIC_URL}/images/xurface.png`} alt="" />
         <span>Xurface</span>
       </div>
     ),

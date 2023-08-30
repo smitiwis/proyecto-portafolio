@@ -13,7 +13,7 @@ const Formacion = () => {
               <div className="informacion__front">
                 <img
                   className="informacion__img"
-                  src="/images/faustino.png"
+                  src={`${process.env.PUBLIC_URL}/images/faustino.png`}
                   alt=""
                 />
                 <div className="informacion__img-sombra"></div>
@@ -56,7 +56,7 @@ const Formacion = () => {
               <div className="informacion__front">
                 <img
                   className="informacion__img"
-                  src="/images/santaIsabel.png"
+                  src={`${process.env.PUBLIC_URL}/images/santaIsabel.png`}
                   alt=""
                 />
                 <div className="informacion__img-sombra"></div>
@@ -98,7 +98,7 @@ const Formacion = () => {
               <div className="informacion__front">
                 <img
                   className="informacion__img"
-                  src="/images/uncp.png"
+                  src={`${process.env.PUBLIC_URL}/images/uncp.png`}
                   alt=""
                 />
                 <div className="informacion__img-sombra"></div>
@@ -144,7 +144,7 @@ const Formacion = () => {
               <div className="informacion__front">
                 <img
                   className="informacion__img"
-                  src="/images/tecsup.png"
+                  src={`${process.env.PUBLIC_URL}/images/tecsup.png`}
                   alt=""
                 />
                 <div className="informacion__img-sombra"></div>
@@ -188,7 +188,7 @@ const Formacion = () => {
               <div className="informacion__front">
                 <img
                   className="informacion__img"
-                  src="/images/udemy.png"
+                  src={`${process.env.PUBLIC_URL}/images/udemy.png`}
                   alt=""
                 />
                 <div className="informacion__img-sombra"></div>
@@ -233,7 +233,7 @@ const Formacion = () => {
               <div className="informacion__front">
                 <img
                   className="informacion__img"
-                  src="/images/ceid.jpg"
+                  src={`${process.env.PUBLIC_URL}/images/ceid.jpg`}
                   alt=""
                 />
                 <div className="informacion__img-sombra"></div>

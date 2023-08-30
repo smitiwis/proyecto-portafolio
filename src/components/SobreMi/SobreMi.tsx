@@ -8,7 +8,11 @@ export const SobreMi = () => {
         <div className="card-main">
           <div className="card-main__data">
             <div className="profile">
-              <img className="profile-image" src="/images/foto2.JPG" alt="my" />
+              <img
+                className="profile-image"
+                src={`${process.env.PUBLIC_URL}/images/foto2.jpg`}
+                alt="my"
+              />
               <h1 className="text text--name text-center mt-2">
                 Peralta Diaz Luis Angel
               </h1>

@@ -6,7 +6,7 @@ const Proyectos = () => {
           <h3 className="proyectos__titulo">Perceptron multicapas I.A</h3>
           <img
             className="proyectos__imagen"
-            src="/images/inteligencia.png"
+            src={`${process.env.PUBLIC_URL}/images/inteligencia.png`}
             alt="yankenpo"
           />
 
@@ -50,7 +50,7 @@ const Proyectos = () => {
           <h3 className="proyectos__titulo">Proyecto Intranet - Home</h3>
           <img
             className="proyectos__imagen"
-            src="/images/colegiohome.png"
+            src={`${process.env.PUBLIC_URL}/images/colegiohome.png`}
             alt="new-proyect"
           />
 
@@ -82,7 +82,7 @@ const Proyectos = () => {
           <h3 className="proyectos__titulo">Proyecto muestra Paises</h3>
           <img
             className="proyectos__imagen"
-            src="/images/paises.png"
+            src={`${process.env.PUBLIC_URL}/images/paises.png`}
             alt="new-pais"
           />
 
@@ -113,7 +113,7 @@ const Proyectos = () => {
           <h3 className="proyectos__titulo">Proyecto Yan-Ken-Po</h3>
           <img
             className="proyectos__imagen"
-            src="/images/yankenpo.png"
+            src={`${process.env.PUBLIC_URL}/images/yankenpo.png`}
             alt="yankenpo"
           />
           <div className="proycetos__info-cont">
@@ -147,7 +147,7 @@ const Proyectos = () => {
           <h3 className="proyectos__titulo">Proyecto Piano</h3>
           <img
             className="proyectos__imagen"
-            src="/images/piano.png"
+            src={`${process.env.PUBLIC_URL}/images/piano.png`}
             alt="yankenpo"
           />
 
@@ -181,7 +181,7 @@ const Proyectos = () => {
           <h3 className="proyectos__titulo">Maquetación con Bootstrap</h3>
           <img
             className="proyectos__imagen"
-            src="/images/maqutacion-bootstrap.png"
+            src={`${process.env.PUBLIC_URL}/maqutacion-bootstrap.png`}
             alt="yankenpo"
           />
 
@@ -212,7 +212,7 @@ const Proyectos = () => {
           <h3 className="proyectos__titulo">Proyecto Maquetacion 2</h3>
           <img
             className="proyectos__imagen"
-            src="/images/maquetacion2.png"
+            src={`${process.env.PUBLIC_URL}/maquetacion2.png`}
             alt="yankenpo"
           />
 
@@ -244,7 +244,7 @@ const Proyectos = () => {
           <h3 className="proyectos__titulo">Proyecto Snake</h3>
           <img
             className="proyectos__imagen"
-            src="/images/snake.png"
+            src={`${process.env.PUBLIC_URL}/snake.png`}
             alt="yankenpo"
           />
 
