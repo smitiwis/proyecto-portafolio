@@ -1,35 +1,40 @@
 // entre 0  y 700
-@media screen and (max-width: 700px) {
- 
-  .banner-contenedor-paradax {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-      height: 450px !important;
-    &::before {
-      width: 100%;
-      height: 100% !important;
-    }
-    .descripcion-paradax {
-      .descripcion-paradax-h2 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-      .descripcion-paradax-parrafo {
-        text-align: center;
-      }
-      .descripcion-paradax-accion {
-        display: flex;
-        justify-content: center;
-      }
-      margin: 0 !important;
-      .titulo {
-        font-size: 35px !important;
+@media screen and (min-width: 700px) {
+  .main-banner {
+    .banner-contenedor-paradax {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: calc(100vh - 177px);
+      background-position:center 90%;
 
-        b {
-          font-size: 35px !important;
+      &::after {
+        width: 100%;
+        height: 100%;
+      }
+
+      .descripcion-paradax {
+        margin: 0;
+        max-width: 480px;
+
+        &-h2 {
+          display: flex;
+          flex-direction: column;
+          .titulo {
+            font-size: 50px;
+            line-height: 60px;
+          }
+        }
+
+        &-parrafo {
+          margin: 1rem 0;
+          color: black;
+          font-weight: 500;
+          line-height: 1.5rem;
+        }
+
+        &-accion {
+          display: flex;
         }
       }
     }

@@ -1,0 +1,92 @@
+// LAYOUT
+.secction-aboutMy {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  // background: linear-gradient(to right, #e9f4ff 40%, white 50%);
+}
+
+.secction-experiencia{
+  color: $white;
+  padding: 3rem 0;
+}
+
+
+
+// *************************************************
+
+// CARD
+.card-main {
+  background-color: $white;
+  width: 100%;
+  display: flex;
+  max-width: 700px;
+  margin: auto;
+  background-color: transparent;
+
+  &__data {
+    padding: 0 1.5rem;
+    overflow: hidden;
+    width: 40%;
+    background-color: white;
+    border-radius: 8px;
+
+    box-shadow: 0px 0px 10px 0px rgba(133, 133, 133, 0.7);
+
+    // border-right: solid #e6e6e6;
+
+    display: flex;
+    flex-direction: column;
+
+    &-footer {
+      border-top: solid rgb(226, 226, 226);
+      background-color: $white;
+      width: 100%;
+      padding: 0.8rem 1rem;
+    }
+  }
+
+  &__description {
+    width: 60%;
+    padding: 1rem 1.5rem;
+    color: $white;
+    // border: solid 1px blue;
+  }
+}
+
+.profile {
+  padding: 1.5rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &-image {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 2px rgba(133, 133, 133, 0.7);
+  }
+}
+
+.text {
+  &--title {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  &--name {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  &--work {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+  }
+
+  &--parraf {
+  }
+}

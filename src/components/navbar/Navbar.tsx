@@ -17,7 +17,7 @@ const NavbarComponent = () => {
             src="/images/react.png"
             alt="logo"
           />
-          <span className="navbar__titulo-text">Smiti developer</span>
+          <span className="navbar__titulo-text">Frontend developer</span>
         </h1>
       </Brand>
       <Toggle aria-controls="basic-navbar-nav" />

@@ -1,0 +1,36 @@
+.boton {
+  text-decoration: none;
+  padding: .55rem 0.9rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  box-shadow: 2px 2px 5px rgb(129, 129, 129);
+  font-weight: 500;
+  transition: all 0.5s;
+  
+  
+  &:hover {
+    cursor: pointer;
+  }
+
+  &--primary {
+    box-sizing: border-box;
+    background-color: white;
+    color: $colorMenu;
+    border: solid 3px white;
+
+    &:hover {
+      color: black;
+    }
+  }
+
+  &--secondary {
+    background-color: $colorMenu;
+    color: white;
+    border: solid 3px $colorMenu;
+
+    &:hover {
+      background-color: black;
+      border: solid 3px black;
+    }
+  }
+}

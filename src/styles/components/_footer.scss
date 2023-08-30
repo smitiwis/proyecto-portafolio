@@ -1,139 +1,107 @@
 .footer {
-    background-image: linear-gradient(to top, $colorMenu, $black);
-    box-shadow: 5px -5px 8px #000000;
-    width: 100%;
-    // height: 400px;s
-    padding: 20px 0;
-    color: white;
-    // border-top: solid 1px white;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  background-image: linear-gradient(to top, $colorMenu, $black);
+  box-shadow: 5px -5px 8px #000000;
+  width: 100%;
+  // height: 400px;s
+  padding: 20px 0;
+  color: white;
+  // border-top: solid 1px white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer__content-Gen {
-    // border: solid 2px red;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+  // border: solid 2px red;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 .footer__content-Ind {
-    // border: solid 2px lime;
-    width: 25%;
-    // height: 280px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 15px 30px;
+  // border: solid 2px lime;
+  width: 25%;
+  // height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 15px 30px;
 }
 .footer__titulo {
-    margin-bottom: 20px;
-    &-h4 {
-        display: table;
-        font-size: 20px;
-        margin: 0px;
-        padding: 10px 20px;
-        border-radius: 10px;
-        box-shadow: 0px 3px 10px  white;
-    }
+  margin-bottom: 20px;
+  &-h4 {
+    display: table;
+    font-size: 20px;
+    margin: 0px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px white;
+  }
 }
 .footer__parrafo {
-    text-align: justify;
+  text-align: justify;
 }
 
 .footer__body {
-    // border: solid 2px red;
-    width: 100%;
+  // border: solid 2px red;
+  width: 100%;
 }
 .footer__content-items {
-    padding: 0;
-    // background-color: maroon;
+  padding: 0;
+  // background-color: maroon;
 }
 .footer__item {
-    margin: 10px 0px;
-    list-style: none;
-    display: flex;
-    align-items: center;
-}
-.footer__icon {
-    margin: 0 10px;
-    font-size: 25px;
-    display: flex;
-    border-radius: 5px;
-    padding: 1.5px;
-    justify-content: center;
-    background-color: white;
-    align-items: center;
-    transform: scale(1);
-    transition: 0.8s;
-    &:hover{
-        transform: scale(1.3);
-        cursor: pointer;
-    }
-}
-.icon-location {
-    color: red;
-}
-.icon-phone {
-    color: #00ff80;
-}
-.icon-gmail {
-    color: #d0ff00;
-}
-.icon-gmail2 {
-    color: #ff3e24;
-}
-.icon-facebook2 {
-    color: #3b5998;
-}
-.icon-whatsapp {
-    color: #00ff80;
-}
-.icon-apuntar {
-    font-size: 20px;
-    margin: 0 10px;
-    color: #00ff80;
-    background-color: black;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: translateX(0px);
-    transition: all 0.6s;
-    &:hover{
-        transform: translateX(8px);
-        cursor: pointer;
-    }
-}
-.footer__boton {
-    font-size: 14px;
-    font-weight: bold;
-    margin: 0 5px;
-    background-color: white;
-    box-shadow: 0px 3px 10px white;
-    color: black;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 1s;
-    &:hover {
-        color: #00ff80;
-        box-shadow: 0px 3px 10px  black;
-        background-color: black;
-    }
+  margin: 10px 0px;
+  list-style: none;
+  display: flex;
+  align-items: center;
 }
 
-.footer__autor{
-    
+.footer__boton {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0 5px;
+  background-color: white;
+  box-shadow: 0px 3px 10px white;
+  color: black;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 1s;
+
+  &:hover {
+    color: #00ff80;
+    box-shadow: 0px 3px 10px black;
+    background-color: black;
+  }
 }
-.footer__autor-text{
-    font-size: 12px;
-    font-family: 'Times New Roman', Times, serif;
+
+.footer__autor {
+}
+.footer__autor-text {
+  font-size: 12px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+// ICONS
+.icons {
+  display: flex;
+  gap: 0.7rem;
+  justify-content: center;
+  align-items: center;
+
+  .icon {
+    display: contents;
+    cursor: pointer;
+    font-size: 1.3rem;
+    transition: all 0.5s;
+
+    &:hover {
+      color: $colorMenu;
+    }
+  }
 }

@@ -1,14 +1,19 @@
 import { Fragment } from "react";
 import Banner from "../components/banner/Banner";
-import ListaPerfiles from "../components/Perfil/ListaPerfiles";
+import ExperienciasLaborables from "../components/Experiencia/ExperienciasLaborables";
 import Habilidades from "./Habilidades";
+import Container from "react-bootstrap/esm/Container";
+import { SobreMi } from "../components/SobreMi/SobreMi";
 
 const Home = () => {
   return (
     <Fragment>
       <Banner />
-      <ListaPerfiles />
-      <Habilidades/>
+      {/* <Container> */}
+        <SobreMi />
+        <ExperienciasLaborables />
+        <Habilidades />
+      {/* </Container> */}
     </Fragment>
   );
 };

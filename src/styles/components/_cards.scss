@@ -8,7 +8,6 @@
   justify-content: center;
 }
 .cards__cont-Gen {
-  width: 95%;
   @include centrarX();
 }
 .cards__cont-Ind {
@@ -76,9 +75,10 @@
 
 .card__back-cont {
   box-shadow: 0px 0px 7px 5px white;
-  @include redondear-img(10px);
+  backface-visibility: hidden;
   position: absolute;
   top: 0px;
+  @include redondear-img(10px);
   @include ancho-largo(100%, 100%);
   @include centrarXY-row();
   transform: rotateY(180deg);
