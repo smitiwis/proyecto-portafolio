@@ -3,10 +3,9 @@
 <head>
   <title>Redirecting...</title>
   <script>
-    // Redirige todas las solicitudes a index.html
-    var url = window.location.href;
-    url = url.replace(/\/404\.html/, '/index.html');
-    window.location.replace(url);
+     if (window.location.pathname !== '/' && !window.location.pathname.startsWith('/index.html')) {
+        window.location.replace('/index.html' + window.location.pathname);
+      }
   </script>
 </head>
 <body>
