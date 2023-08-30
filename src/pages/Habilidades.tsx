@@ -4,7 +4,7 @@ import CardsCms from "../components/cards/Cards-cms";
 
 const Habilidades = () => {
   return (
-    <div>
+    <div className="container">
       <Cards />
       <CardsFramework />
       <CardsCms />

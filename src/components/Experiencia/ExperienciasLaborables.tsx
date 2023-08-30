@@ -4,9 +4,11 @@ import { Chrono } from "react-chrono";
 
 const ExperienciasLaborables = () => {
   return (
-    <Container>
-      <section className="secction-experiencia">
-        <h1 className="text text--title text-center mb-5">Experiencia laboral</h1>
+    <section className="secction-experiencia">
+      <Container>
+        <h1 className="text text--title text-center mb-5">
+          Experiencia laboral
+        </h1>
 
         <div style={{ width: "100%", height: "auto" }}>
           <Chrono
@@ -21,7 +23,7 @@ const ExperienciasLaborables = () => {
               primary: "#0080ff",
               secondary: "transparent",
               cardBgColor: "white",
-              titleColor: "white",
+              titleColor: "#0080ff",
               titleColorActive: "#0080ff",
             }}
             fontSizes={{
@@ -41,8 +43,8 @@ const ExperienciasLaborables = () => {
             }}
           />
         </div>
-      </section>
-    </Container>
+      </Container>
+    </section>
   );
 };
 

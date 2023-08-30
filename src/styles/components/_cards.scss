@@ -143,13 +143,16 @@
 }
 
 .--card-back-html {
-  @include cardBack-color(#ffa60066);
+  // @include cardBack-color(#ffa60066);
+  background: url("../../../public/images/cieloeterno.gif");
 }
 .--card-back-css {
-  @include cardBack-color(#00eeff66);
+  background: url("../../../public/images/cieloeterno.gif");
+  // @include cardBack-color(#00eeff66);
 }
 .--card-back-js {
-  @include cardBack-color(#e5ff0066);
+  background: url("../../../public/images/cieloeterno.gif");
+  // @include cardBack-color(#e5ff0066);
 }
 .--card-back-php {
   @include cardBack-color(#002fff66);

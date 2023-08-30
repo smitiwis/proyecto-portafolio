@@ -105,3 +105,22 @@
     }
   }
 }
+
+.icon-apuntar {
+    font-size: 20px;
+    margin: 0 10px;
+    color: #00ff80;
+    background-color: black;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(0px);
+    transition: all 0.6s;
+    &:hover{
+        transform: translateX(8px);
+        cursor: pointer;
+    }
+}
