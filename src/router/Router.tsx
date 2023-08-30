@@ -20,6 +20,7 @@ const AppRoutes = () => {
       <Header />
       <main>
         <Routes>
+          <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/proyectos" element={<Proyectos />} />
           <Route path="/habilidades" element={<Habilidades />} />
@@ -27,8 +28,6 @@ const AppRoutes = () => {
           <Route path="/contacto" element={<Contacto />} />
           <Route path="/experiencia" element={<Experiencia />} />
           
-          <Route path="/" element={<Navigate to="/home" />} />
-
           <Route path="*" element={<Navigate to="/home" />} />
         </Routes>
       </main>
