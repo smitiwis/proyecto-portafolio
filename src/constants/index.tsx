@@ -75,70 +75,104 @@ export const EXPERIENCIA_LOBORAL = [
     title: "May. 2022 - Jul. 2023",
     cardTitle: (
       <div className="d-flex align-items-center gap-2 mb-2">
-        <img height={30}  src={`${process.env.PUBLIC_URL}/images/betsofice.png`} alt="" />
+        <img
+          height={30}
+          src={`${process.env.PUBLIC_URL}/images/betsofice.png`}
+          alt=""
+        />
         <span>Betsoffice SAC</span>
       </div>
     ),
-    cardSubtitle: "Desarrollador full stack",
+    cardSubtitle: (
+      <div>
+        <p>Desarrollador frontend</p>
+        <div className="d-flex gap-2">
+          <img
+            height={30}
+            src={`${process.env.PUBLIC_URL}/images/olimpo.png`}
+            alt="olimpo"
+          />
+          <p className="mb-0">
+            <b>Cliente: Olimpo.bet (Perú y Ecuador): </b>
+            Es una casa de apuestas que brinda entretenimiento digital en
+            apuestas deportivas, casino y deportes virtuales.
+          </p>
+        </div>
+      </div>
+    ),
     cardDetailedText: (
       <div>
-        <b>Cliente: Olimpo.bet (Perú y Ecuador): </b>
-        <p>
-          Es una casa de apuestas que brinda entretenimiento digital en apuestas
-          deportivas, casino y deportes virtuales.
-        </p>
-        <b>Proyecto: Juegos virtuales (Angular 13): </b>
-        <p>
-          <ul>
-            <li>
-              <b>La Polla Olimpo: </b>
-              <span>
-                Es un juego virtual para predecir resultados en eventos
-                deportivos.
-              </span>
-            </li>
-            <li>
-              <b>Popularity Olimpo: </b>
-              <span>la respuesta más elegida por todos los participantes.</span>
-            </li>
-          </ul>
-        </p>
-        <b>Proyecto: Programa de lealtad (ReactJS):</b>
-        <p>
-          Es un aplicativo para mostrar puntos (Libras) el cual segmenta a los
-          jugadores con mas actividad.
-        </p>
-        <b> Proyecto: Marketplace (ReactJS + TS)</b>
-        <p>
-          Es una tienda virtual que busca premiar y retener a los clientes
-          habituales, ofreciendo incentivos y recompensas por su fidelidad. Es
-          un módulo
-        </p>
-        <b>Proyecto: Real Time Notifications RTB (ReactJS + TS)</b>
-        <p>
-          para notificar premios, promociones, depósitos, etc. en tiempo real a
-          los usuarios.
-        </p>
-        Principales tareas ejecutadas:
-        <div>
-          <ul>
-            <li>Soporte en el backoffice de La Polla y Popularity.</li>
-            <li>Soporte a la plataforma web.(Perú - Ecuador)</li>
-            <li>Integración de proyectos en el sitio web.</li>
-            <li>Desarrollo y mantenimiento de nuevos módulos y componentes.</li>
-            <li>Correcciones de bugs e incongruencias en el sitio web.</li>
-            <li>Desarrollo de scripts para nuevas funcionalidades.</li>
-            <li>Desarrollo de animaciones.</li>
-            <li>Maquetación de los diseños recibidos por el área de UX-UI.</li>
-            <li>Manejo de Git para versionar los proyectos.</li>
-            <li>
-              Desarrollo de microlibrerías para facilitar la maquetación de
-              diseños.
-            </li>
-            <li>
-              Consumir servicios (API) para mostrar información al usuario.
-            </li>
-          </ul>
+        <ol>
+          <li>
+            <b>Proyecto: Juegos virtuales (Angular 13): </b>
+            <span>
+              <ul>
+                <li>
+                  <b>La Polla Olimpo: </b>
+                  <span>
+                    Es un juego virtual para predecir resultados en eventos
+                    deportivos.
+                  </span>
+                </li>
+                <li>
+                  <b>Popularity Olimpo: </b>
+                  <span>
+                    la respuesta más elegida por todos los participantes.
+                  </span>
+                </li>
+              </ul>
+            </span>
+          </li>
+          <li>
+            <b>Proyecto: Programa de lealtad (ReactJS):</b>
+            <p>
+              Es un aplicativo para mostrar puntos (Libras) el cual segmenta a
+              los jugadores con mas actividad.
+            </p>
+          </li>
+          <li>
+            <b>Proyecto: Marketplace (ReactJS + TS)</b>
+            <p>
+              Es una tienda virtual que busca premiar y retener a los clientes
+              habituales, ofreciendo incentivos y recompensas por su fidelidad.
+              Es un módulo
+            </p>
+          </li>
+          <li>
+            <b>Proyecto: Real Time Notifications RTB (ReactJS + TS)</b>
+            <p>
+              para notificar premios, promociones, depósitos, etc. en tiempo
+              real a los usuarios.
+            </p>
+          </li>
+        </ol>
+
+        <div className="ps-3">
+          <b>Principales tareas ejecutadas:</b>
+          <div>
+            <ul>
+              <li>Soporte en el backoffice de La Polla y Popularity.</li>
+              <li>Soporte a la plataforma web.(Perú - Ecuador)</li>
+              <li>Integración de proyectos en el sitio web.</li>
+              <li>
+                Desarrollo y mantenimiento de nuevos módulos y componentes.
+              </li>
+              <li>Correcciones de bugs e incongruencias en el sitio web.</li>
+              <li>Desarrollo de scripts para nuevas funcionalidades.</li>
+              <li>Desarrollo de animaciones.</li>
+              <li>
+                Maquetación de los diseños recibidos por el área de UX-UI.
+              </li>
+              <li>Manejo de Git para versionar los proyectos.</li>
+              <li>
+                Desarrollo de microlibrerías para facilitar la maquetación de
+                diseños.
+              </li>
+              <li>
+                Consumir servicios (API) para mostrar información al usuario.
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     ),
@@ -147,24 +181,39 @@ export const EXPERIENCIA_LOBORAL = [
     title: "Abr. 2021 - May. 2022",
     cardTitle: (
       <div className="d-flex align-items-center gap-2 mb-2">
-        <img height={30} src={`${process.env.PUBLIC_URL}/images/tata.png`} alt="" />
+        <img
+          height={30}
+          src={`${process.env.PUBLIC_URL}/images/tata.png`}
+          alt=""
+        />
         <span>Tata Consultancy Services (TATA)</span>
       </div>
     ),
-    cardSubtitle: `Desarrollador de front-end`,
+    cardSubtitle: (
+      <div>
+        <p>Desarrollador frontend</p>
+        <div className="d-flex gap-2">
+          <img
+            height={30}
+            src={`${process.env.PUBLIC_URL}/images/interbank.png`}
+            alt="olimpo"
+          />
+          <p className="mb-0">
+            <b>Cliente: Interbank </b>
+            Es un banco muy reconocido que ofrece servicios de transferencias en
+            todas sus modalidades tanto en soles como en dólares
+          </p>
+        </div>
+      </div>
+    ),
     cardDetailedText: (
       <div>
-        <b>Cliente: Interbank: </b>
-        <p>
-          Es un banco muy reconocido que ofrece servicios de transferencias en
-          todas sus modalidades tanto en soles como en dólares
-        </p>
         <b>Proyecto: Ibk-Nexbie (Angular 12 - Ionic)</b>
         <p>
           Aplicación en WEB, REST y APP que permite hacer movimientos, pagos de
           servicios, transferencias, pagos masivos, etc.
         </p>
-        Principales tareas ejecutadas en el Proyecto.
+        <b>Principales tareas ejecutadas:</b>
         <div>
           <ul>
             <li>
@@ -203,7 +252,11 @@ export const EXPERIENCIA_LOBORAL = [
     title: "Nov. 2018 - Ene. 2021",
     cardTitle: (
       <div className="d-flex align-items-center gap-2 mb-2">
-        <img height={30} src={`${process.env.PUBLIC_URL}/images/isgd.png`} alt="" />
+        <img
+          height={30}
+          src={`${process.env.PUBLIC_URL}/images/isgd.png`}
+          alt=""
+        />
         <span>Ingenieria Social para la Gestión del Desarrollo (ISGD)</span>
       </div>
     ),
@@ -215,7 +268,7 @@ export const EXPERIENCIA_LOBORAL = [
           Aplicación que permite a la clínica preventis la gestión backoffice de
           citas y pacientes.
         </p>
-        Principales tareas ejecutadas en el proyecto:
+        <b>Principales tareas ejecutadas:</b>
         <ul>
           <li>Desarrollo de scripts, vistas y animaciones.</li>
           <li>Desarrollo de servicios web para la comunicación end to end.</li>
@@ -230,7 +283,7 @@ export const EXPERIENCIA_LOBORAL = [
           Aplicación web para la ONG ISGD, que se encarga de brindar cursos en
           línea basados en discriminación y problemas sociales.
         </p>
-        Principales tareas ejecutadas en el proyecto:
+        <b>Principales tareas ejecutadas:</b>
         <ul>
           <li>Desarrollo de scripts, vistas y animaciones.</li>
           <li>Desarrollo y mantenimiento de módulos y componentes frontend.</li>
@@ -268,7 +321,11 @@ export const EXPERIENCIA_LOBORAL = [
     title: <div>Ago. 2017 - Ago. 2018</div>,
     cardTitle: (
       <div className="d-flex align-items-center gap-2 mb-2">
-        <img height={30} src={`${process.env.PUBLIC_URL}/images/xurface.png`} alt="" />
+        <img
+          height={30}
+          src={`${process.env.PUBLIC_URL}/images/xurface.png`}
+          alt=""
+        />
         <span>Xurface</span>
       </div>
     ),
@@ -278,9 +335,9 @@ export const EXPERIENCIA_LOBORAL = [
         <b>Proyecto: METTA</b>
         <p>
           Este proyecto está relacionado con las actividades de back office de
-          la aseguradora RIMAC. Principales tareas ejecutadas en el proyecto:
+          la aseguradora RIMAC.
         </p>
-        Principales tareas ejecutadas en el proyecto:
+        <b>Principales tareas ejecutadas:</b>
         <ul>
           <li>Desarrollo de scripts, vistas y animaciones.</li>
           <li>Desarrollo de módulos y componentes front-end.</li>
