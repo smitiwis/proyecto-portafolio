@@ -16,7 +16,7 @@ import { Footer } from "../components/footer/Footer";
 
 const AppRoutes = () => {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Header />
       <main>
         <Routes>
