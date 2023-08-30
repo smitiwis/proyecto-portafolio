@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Redirecting...</title>
+  <script>
+    // Redirige todas las solicitudes a index.html
+    var url = window.location.href;
+    url = url.replace(/\/404\.html/, '/index.html');
+    window.location.replace(url);
+  </script>
+</head>
+<body>
+  If you are not redirected, <a href="/index.html">click here</a>.
+</body>
+</html>
