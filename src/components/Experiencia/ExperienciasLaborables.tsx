@@ -6,9 +6,7 @@ const ExperienciasLaborables = () => {
   return (
     <section className="secction-experiencia">
       <Container>
-        <h1 className="text text--title text-center mb-5">
-          Experiencia laboral
-        </h1>
+        <p className="text-title-h1  mb-5">Experiencia</p>
 
         <div style={{ width: "100%", height: "auto" }}>
           <Chrono

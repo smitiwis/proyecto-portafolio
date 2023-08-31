@@ -1,3 +1,15 @@
+.button-wrapper{
+  display: flex;
+  align-items: flex-end;
+  flex: 1;
+  gap: 0.8rem;
+
+  .boton{
+    height: fit-content;
+  }
+}
+
+
 .boton {
   text-decoration: none;
   padding: .55rem 0.9rem;

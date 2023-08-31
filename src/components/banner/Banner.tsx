@@ -5,13 +5,13 @@ const Banner = () => (
     <div className="banner-contenedor-paradax">
       <Container>
         <div className="descripcion-paradax">
-          <div className="descripcion-paradax-h2">
-            <p className="titulo">
+          <div className="text-title-h1">
+            <p>
               Front-end is <br />
             </p>
-            <span className="titulo">
+            <span className="d-flex">
               <span>my&nbsp;</span>
-              <span className="titulo--interes">
+              <span className="text-title-h1--interes">
                 <Typical
                   steps={[
                     "",
