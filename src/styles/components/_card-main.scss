@@ -1,5 +1,6 @@
 // LAYOUT
 .secction-aboutMy {
+  position: relative;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -15,12 +16,17 @@
   );
 }
 
+.secction-skills{
+  padding: 3rem 0;
+}
+
 // *************************************************
 
 // CARD
 .card-wrapper {
   max-width: 700px;
   margin: auto;
+  position: relative;
 }
 
 .card-main {
@@ -96,6 +102,7 @@
 }
 
 .text {
+  position: relative;
   &--title {
     font-size: 3rem;
     font-weight: 700;

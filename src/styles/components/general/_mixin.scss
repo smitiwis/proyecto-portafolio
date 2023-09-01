@@ -1,33 +1,63 @@
 @mixin centrarXY-row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin centrarXY-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@mixin centrarX {
+  display: flex;
+  justify-content: center;
+}
+@mixin centrarY {
+  display: flex;
+  align-items: center;
+}
+@mixin redondear-img($value) {
+  border-radius: $value;
+}
+@mixin ancho-largo($ancho, $largo) {
+  width: $ancho;
+  height: $largo;
+}
+@mixin cardBack-color($color) {
+  background: $color;
+}
+@mixin cardFront-color($colorCard) {
+  background-color: $colorCard;
+  // codigo que se agrega afecta a todos los CARDS
+}
+
+.ovni-decore {
+  position: absolute;
+  width: 60px;
+  right: -53px;
+  top: -35px;
+  transform: rotate(33deg);
+  animation: aparecerDesaparecer 2s ease-in-out infinite;
+
+  img {
+    width: 100%;
   }
-  @mixin centrarXY-col {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+  @media screen and (min-width: 700px) {
+    width: 150px;
+    right: -135px;
+    right: -135px;
+    top: -85px;
   }
-  @mixin centrarX {
-    display: flex;
-    justify-content: center;
+}
+
+@keyframes aparecerDesaparecer {
+  0%,
+  100% {
+    opacity: 0; 
   }
-  @mixin centrarY {
-    display: flex;
-    align-items: center;
+  50% {
+    opacity: 1; 
   }
-  @mixin redondear-img ($value){
-    border-radius: $value;
-  }
-  @mixin ancho-largo($ancho, $largo) {
-    width: $ancho;
-    height: $largo;
-  }
-  @mixin cardBack-color($color) {
-    background: $color;
-  }
-  @mixin cardFront-color($colorCard) {
-    background-color: $colorCard;
-    // codigo que se agrega afecta a todos los CARDS
-  }
+}

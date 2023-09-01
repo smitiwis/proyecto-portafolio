@@ -6,8 +6,6 @@ export const SobreMi = () => {
     <section className="secction-aboutMy">
       <Container>
         <div className="card-wrapper">
-        
-
           <div className="card-main">
             <div className="card-main__data">
               <div className="profile">
@@ -32,7 +30,15 @@ export const SobreMi = () => {
             </div>
 
             <div className="card-main__description">
-            <p className="text-title-h1 c-white mb-4">Sobre mi</p>
+              <p className="text-title-h1 c-white mb-4">
+                Sobre mi
+                <span className="ovni-decore">
+                  <img
+                    src={`${process.env.PUBLIC_URL}/images/ovni.png`}
+                    alt="ovni"
+                  />
+                </span>
+              </p>
 
               <p className="text text--parraf mb-0">
                 Bachiller en Ingeniería de Sistemas especializado en desarrollo

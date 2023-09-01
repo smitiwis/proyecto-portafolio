@@ -53,6 +53,8 @@
 // TITULOS
 .text-title {
   &-h1 {
+    position: relative;
+    width: fit-content;
     font-weight: normal;
     margin: 0;
     color: $colorMenu;

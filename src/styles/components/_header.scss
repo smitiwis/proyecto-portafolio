@@ -1,7 +1,7 @@
-@media (prefers-reduced-motion: no-preference) {
-  .rotar {
-    animation: rotar-spin infinite 20s linear;
-  }
+@import "./general/mixin";
+
+.rotar {
+  animation: rotar-spin infinite 20s linear;
 }
 
 @keyframes rotar-spin {

@@ -254,7 +254,7 @@ export const EXPERIENCIA_LOBORAL = [
   {
     title: "Nov 2018 - Ene 2021",
     cardTitle: (
-      <div className="d-flex gap-2 mb-2">
+      <div className="d-flex align-items-center gap-2 mb-2">
         <img
           className="mt-1"
           height={32}
