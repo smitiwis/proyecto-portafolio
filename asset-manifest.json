@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/proyecto-portafolio/static/css/main.7036b005.css",
-    "main.js": "/proyecto-portafolio/static/js/main.7eaaf592.js",
+    "main.css": "/proyecto-portafolio/static/css/main.47ffdcc7.css",
+    "main.js": "/proyecto-portafolio/static/js/main.ee64ad79.js",
     "static/js/787.ae0d8d37.chunk.js": "/proyecto-portafolio/static/js/787.ae0d8d37.chunk.js",
     "static/media/paradax.jpg": "/proyecto-portafolio/static/media/paradax.442b313ce9c4a437a60c.jpg",
     "static/media/foto3.jpg": "/proyecto-portafolio/static/media/foto3.a17d9ea0ed7884fae885.jpg",
     "static/media/cieloeterno.gif": "/proyecto-portafolio/static/media/cieloeterno.0e24a395210bb96f9df3.gif",
     "index.html": "/proyecto-portafolio/index.html",
-    "main.7036b005.css.map": "/proyecto-portafolio/static/css/main.7036b005.css.map",
-    "main.7eaaf592.js.map": "/proyecto-portafolio/static/js/main.7eaaf592.js.map",
+    "main.47ffdcc7.css.map": "/proyecto-portafolio/static/css/main.47ffdcc7.css.map",
+    "main.ee64ad79.js.map": "/proyecto-portafolio/static/js/main.ee64ad79.js.map",
     "787.ae0d8d37.chunk.js.map": "/proyecto-portafolio/static/js/787.ae0d8d37.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7036b005.css",
-    "static/js/main.7eaaf592.js"
+    "static/css/main.47ffdcc7.css",
+    "static/js/main.ee64ad79.js"
   ]
 }
