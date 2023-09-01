@@ -6,17 +6,19 @@
   // background: linear-gradient(to right, #e9f4ff 40%, white 50%);
 }
 
-.secction-experiencia{
+.secction-experiencia {
   padding: 3rem 0;
-  background-image: linear-gradient(to left, rgba(255, 255, 255), rgba(167, 211, 255));
+  background-image: linear-gradient(
+    to left,
+    rgba(255, 255, 255),
+    rgba(167, 211, 255)
+  );
 }
-
-
 
 // *************************************************
 
 // CARD
-.card-wrapper{
+.card-wrapper {
   max-width: 700px;
   margin: auto;
 }
@@ -61,17 +63,16 @@
   }
 }
 
-
-@media screen and (min-width: 700px) { 
+@media screen and (min-width: 700px) {
   .card-main {
     flex-direction: row;
-  
+
     &__data {
       width: 40%;
       &-footer {
       }
     }
-  
+
     &__description {
       width: 60%;
     }
@@ -115,26 +116,28 @@
   }
 }
 
-
-
 // *************************
 // ESTILOS LINEA DE TIEMPO
-.my-card{
+.my-card {
   box-shadow: 0px 0px 10px 2px rgba(133, 133, 133, 0.7);
 }
 
-.my-title{
-
+.my-title {
 }
 
-.dglvSm{
-  font-weight: bold !important;
-}
 
-.cXMFPL.active{
-  background-color: #0080ff !important;
-}
 
-.qLlNn{
-  padding: 0 !important;
+
+.timeline-main-wrapper {
+  & > div {
+    padding: 0 !important;
+  }
+  
+  & .cXMFPL.active{
+    background-color: #0080ff !important;
+  }
+
+  .dglvSm {
+    font-weight: bold !important;
+  }
 }

@@ -72,7 +72,7 @@ export const PROFILES = [
 
 export const EXPERIENCIA_LOBORAL = [
   {
-    title: "May. 2022 - Jul. 2023",
+    title: "May 2022 - Jul 2023",
     cardTitle: (
       <div className="d-flex align-items-center gap-2 mb-2">
         <img
@@ -180,7 +180,7 @@ export const EXPERIENCIA_LOBORAL = [
     ),
   },
   {
-    title: "Abr. 2021 - May. 2022",
+    title: "Abr 2021 - May 2022",
     cardTitle: (
       <div className="d-flex align-items-center gap-2 mb-2">
         <img
@@ -252,7 +252,7 @@ export const EXPERIENCIA_LOBORAL = [
     ),
   },
   {
-    title: "Nov. 2018 - Ene. 2021",
+    title: "Nov 2018 - Ene 2021",
     cardTitle: (
       <div className="d-flex gap-2 mb-2">
         <img
@@ -322,7 +322,7 @@ export const EXPERIENCIA_LOBORAL = [
     ),
   },
   {
-    title: <div>Ago. 2017 - Ago. 2018</div>,
+    title: "Ago 2017 - Ago 2018",
     cardTitle: (
       <div className="d-flex align-items-center gap-2 mb-2">
         <img
