@@ -30,7 +30,7 @@ export const SobreMi = () => {
             </div>
 
             <div className="card-main__description">
-              <p className="text-title-h1 c-white mb-4">
+              <p className="text-title-h1 c-white">
                 Sobre mi
                 <span className="ovni-decore">
                   <img
@@ -40,7 +40,7 @@ export const SobreMi = () => {
                 </span>
               </p>
 
-              <p className="text text--parraf mb-0">
+              <p className="text text--parraf">
                 Bachiller en Ingeniería de Sistemas especializado en desarrollo
                 frontend, amplia experiencia en integración de servicios web
                 Restfull, creación de microlibrerías y servidores de despliegue.

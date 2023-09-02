@@ -4,9 +4,9 @@ const Banner = () => (
   <section className="main-banner">
     <div className="banner-contenedor-paradax">
       <Container>
-        <div className="descripcion-paradax">
+        <div className="descripcion-paradax py-4">
           <div className="text-title-h1">
-            <p>
+            <p className="mb-0">
               Front-end is <br />
             </p>
             <span className="d-flex">

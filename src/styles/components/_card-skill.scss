@@ -2,14 +2,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.8rem;
+  gap: 0.5rem;
   color: white;
-
+  
   .card-skill-title {
     font-size: 0.8rem;
   }
-
+  
   @media screen and (min-width: 700px) {
+    gap: 0.8rem;
+
     .card-skill-title {
       font-size: 1.1rem;
     }
@@ -59,8 +61,7 @@
   }
 
   @media screen and (min-width: 700px) {
-
-    &__shadow{
+    &__shadow {
       width: 86px;
       height: 20px;
     }

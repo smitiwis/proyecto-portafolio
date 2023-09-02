@@ -16,7 +16,7 @@
   );
 }
 
-.secction-skills{
+.secction-skills {
   padding: 3rem 0;
 }
 
@@ -43,11 +43,7 @@
     width: 100%;
     background-color: white;
     border-radius: 8px;
-
     box-shadow: 0px 0px 10px 0px rgba(133, 133, 133, 0.7);
-
-    // border-right: solid #e6e6e6;
-
     display: flex;
     flex-direction: column;
 
@@ -61,11 +57,20 @@
 
   &__description {
     width: 100%;
-    padding: 0 1.5rem;
+    padding: 2.3rem 1.5rem 0;
     color: $white;
     display: flex;
     flex-direction: column;
-    // border: solid 1px blue;
+    margin-top: 1rem;
+
+    .text-title-h1 {
+      margin: 0 auto 1rem;
+    }
+
+    .text {
+      font-size: 0.9rem;
+      margin-bottom: 1.5rem;
+    }
   }
 }
 
@@ -81,6 +86,13 @@
 
     &__description {
       width: 60%;
+      margin-top: 0;
+      padding: 0 1.5rem;
+
+      .text-title-h1 {
+        width: 100%;
+        margin-bottom: 1.5rem;
+      }
     }
   }
 }
@@ -92,6 +104,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  max-width: 250px;
+  margin: auto;
 
   &-image {
     width: 130px;
@@ -132,15 +146,12 @@
 .my-title {
 }
 
-
-
-
 .timeline-main-wrapper {
   & > div {
     padding: 0 !important;
   }
-  
-  & .cXMFPL.active{
+
+  & .cXMFPL.active {
     background-color: #0080ff !important;
   }
 
